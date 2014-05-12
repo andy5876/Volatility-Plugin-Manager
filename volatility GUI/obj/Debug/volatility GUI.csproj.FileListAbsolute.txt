@@ -1,0 +1,13 @@
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Debug\volatility GUI.exe.config
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility GUI.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility_GUI.Form1.resources
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility_GUI.Properties.Resources.resources
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility GUI.csproj.GenerateResource.Cache
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Debug\volatility GUI.exe
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Debug\volatility GUI.pdb
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility GUI.exe
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility GUI.pdb
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Debug\volatility GUI.exe.manifest
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Debug\volatility GUI.application
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility GUI.exe.manifest
+d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\obj\Debug\volatility GUI.application
