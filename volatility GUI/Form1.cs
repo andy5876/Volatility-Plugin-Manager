@@ -1182,9 +1182,9 @@ if (backgroundWorker1.CancellationPending)
                     
                 }
                     button1.Enabled = true;
+                    progresslabel.Text = "progress.... 100%";
+                    progressBar1.Value = 100;
 
-
-backgroundWorker1.ReportProgress(progress);
                  
                 
         }
