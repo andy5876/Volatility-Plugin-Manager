@@ -9,3 +9,35 @@ Any questions, suggestions or comments please feel free to contact
 
 Andy Nind
 andrewnind@gmail.com
+
+
+Supported Plugins:
+
+Image Info
+psscan
+pslist
+pstree
+dlllist
+connscan
+sockscan
+connections and sockets
+netscan
+modscan
+cmdscan
+svcscan
+getsids
+evtlogs
+screenshot
+userassist
+shellbags
+shimcache
+sessions
+vadinfo
+vaddump
+memdump
+handles
+privs
+envars
+threads
+iehistory
+malfind
