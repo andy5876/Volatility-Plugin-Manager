@@ -52,7 +52,7 @@
 	<summary>
 		<codepage>1252</codepage>
 		<title>Installation Database</title>
-		<subject>Volatility Plugin Manager 1.0</subject>
+		<subject>Volatility Plugin Manager 1.1</subject>
 		<author>##ID_STRING2##</author>
 		<keywords>Installer,MSI,Database</keywords>
 		<comments>Contact:  Your local administrator</comments>
@@ -343,7 +343,7 @@
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>NewComponent1</td><td>{75391FFC-B67E-4CC7-9DC3-04F4D9C065EC}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>volatility.exe</td><td>{CD71415B-B9A0-464A-B3CD-A20FA82E4FE4}</td><td>INSTALLDIR</td><td>2</td><td/><td>volatility.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>volatility_GUI.Primary_output</td><td>{019BB515-E5C9-4A5B-A237-57AFF69566A7}</td><td>INSTALLDIR</td><td>2</td><td/><td>volatility_gui.primary_outpu</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>volatility_GUI.Primary_output</td><td>{E87E3FA7-BABC-40BC-A9DF-155C1807A9D7}</td><td>INSTALLDIR</td><td>2</td><td/><td>volatility_gui.primary_outpu</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1175,6 +1175,7 @@
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>lethal_1_lethal_forensics</td><td>ProgramMenuFolder</td><td>LETHAL~1|Lethal Forensics</td><td/><td>1</td><td/></row>
 		<row><td>setup2</td><td>lethal_1_lethal_forensics</td><td>Setup2</td><td/><td>1</td><td/></row>
+		<row><td>volati_1.1_volatility_plugin_manager_1.1</td><td>lethal_1_lethal_forensics</td><td>VOLATI~1.1|Volatility Plugin Manager 1.1</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -2032,7 +2033,7 @@
 		<col def="S0">Miscellaneous</col>
 		<row><td>NewComponent1</td><td/><td/><td>_2ECF3593_87F7_46D4_9454_A2F05293AA56_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>volatility.exe</td><td/><td/><td>_79749C0E_45F0_487A_B5CE_DC1B111F12B1_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>volatility_GUI.Primary_output</td><td/><td/><td>_9F201590_64CF_4512_8C8E_C034A2C0FD30_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>volatility_GUI.Primary_output</td><td/><td/><td>_188C7671_4D73_478C_B008_D1FC5BD91437_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2651,7 +2652,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Lethal Forensics</td><td>0</td><td/><td>1520621056</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Lethal Forensics</td><td>0</td><td/><td>-1969046924</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1520586272</td></row>
@@ -3467,6 +3468,7 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>volatility.exe</td><td>0</td><td/><td>1520590849</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>Volatility Plugin Manager 2.0</td><td>0</td><td/><td>1386409687</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>Volatility Plugin Manager 1.0</td><td>0</td><td/><td>1520570369</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>Volatility Plugin Manager 1.1</td><td>0</td><td/><td>-1969061036</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1386368599</td></row>
@@ -3755,9 +3757,10 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1386368599</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.LethalForensics.com</td><td>0</td><td/><td>1520621056</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Lethal Forensics</td><td>0</td><td/><td>1520621056</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.LethalForensics.com</td><td>0</td><td/><td>-1969046924</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Lethal Forensics</td><td>0</td><td/><td>-1969046924</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>Volatility Plugin Manager 1.0</td><td>0</td><td/><td>1520601089</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>Volatility Plugin Manager 1.1</td><td>0</td><td/><td>-1969056940</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1386368599</td></row>
 	</table>
 
@@ -3870,6 +3873,8 @@
 		<row><td>_23D604278C7F4C3CB2BE472C602DE8BC.exe</td><td/><td>d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Release\Volatility Plugin Manager beta.exe</td><td>0</td></row>
 		<row><td>_5CEAA6753E054138918938F69C2F1CBE.exe</td><td/><td>d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Release\Volatility Plugin Manager beta.exe</td><td>0</td></row>
 		<row><td>_Built1_44AFA2C780E945D395AD0ECCD3BAC1A5.exe</td><td/><td>D:\Pictures\VPM Icon large.ico</td><td>0</td></row>
+		<row><td>_Built1_F8B515F938094EE7A4D8128ED6B26D94.exe</td><td/><td>D:\Pictures\VPM Icon large.ico</td><td>0</td></row>
+		<row><td>_Built_7DA16264215A4DD487A5BC8A49638197.exe</td><td/><td>D:\Pictures\VPM Icon large.ico</td><td>0</td></row>
 		<row><td>_Built_8E3A8F6E046848C1A68338CCB63D0E85.exe</td><td/><td>D:\Pictures\VPM Icon large.ico</td><td>0</td></row>
 		<row><td>_C2B0CD55415E4813BF541B778C1FE8F7.exe</td><td/><td>d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Release\Volatility Plugin Manager beta.exe</td><td>0</td></row>
 		<row><td>_C449E047D34B447C884332098B34B1B9.exe</td><td/><td>d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Release\Volatility Plugin Manager beta.exe</td><td>0</td></row>
@@ -4386,7 +4391,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]volatility GUI.Primary output</td><td/></row>
 		<row><td>ProductCode</td><td>{517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/></row>
-		<row><td>ProductName</td><td>Volatility Plugin Manager 1.0</td><td/></row>
+		<row><td>ProductName</td><td>Volatility Plugin Manager 1.1</td><td/></row>
 		<row><td>ProductVersion</td><td>1.00.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
@@ -4466,8 +4471,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="i2">InstallMode</col>
 		<row><td>FileKey1</td><td>volatility.exe</td><td/><td>lethal_1_lethal_forensics</td><td>2</td></row>
 		<row><td>FileKey2</td><td>volatility.exe</td><td/><td>setup2</td><td>2</td></row>
+		<row><td>FileKey3</td><td>volatility_GUI.Primary_output</td><td/><td>volati_1.1_volatility_plugin_manager_1.1</td><td>2</td></row>
 		<row><td>UNINST_Uninstall_Setup2</td><td>NewComponent1</td><td/><td>setup2</td><td>2</td></row>
-		<row><td>_Built</td><td>volatility_GUI.Primary_output</td><td/><td>setup2</td><td>2</td></row>
+		<row><td>_Built</td><td>volatility_GUI.Primary_output</td><td/><td>volati_1.1_volatility_plugin_manager_1.1</td><td>2</td></row>
 		<row><td>volatility.exe</td><td>volatility.exe</td><td/><td>setup2</td><td>2</td></row>
 	</table>
 
@@ -4555,8 +4561,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
 		<row><td>UNINST_Uninstall_Setup2</td><td>setup2</td><td>UNINST|Uninstall Setup2</td><td>NewComponent1</td><td>[SystemFolder]msiexec.exe</td><td>/x {517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/><td/><td>UNINST_Uninstall_S_1B531749D93B4813AF13CAC452D7C9F1.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>_Built</td><td>setup2</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_8E3A8F6E046848C1A68338CCB63D0E85.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_44AFA2C780E945D395AD0ECCD3BAC1A5.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built</td><td>volati_1.1_volatility_plugin_manager_1.1</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_7DA16264215A4DD487A5BC8A49638197.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_F8B515F938094EE7A4D8128ED6B26D94.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>volatility.exe</td><td>setup2</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>volatility.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>volatility.exe_1792559B9E584BF3AC8BE73F375828F8.exe</td><td>1</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 

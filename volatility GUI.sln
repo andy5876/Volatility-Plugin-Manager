@@ -11,18 +11,6 @@ Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup2", "Setup2\Setup2.isp
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://lethaladastra.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Setup2\\Setup2.isproj
-		SccProjectName1 = Setup2
-		SccLocalPath1 = Setup2
-		SccProjectUniqueName2 = volatility\u0020GUI\\volatility\u0020GUI.csproj
-		SccProjectName2 = volatility\u0020GUI
-		SccLocalPath2 = volatility\u0020GUI
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
