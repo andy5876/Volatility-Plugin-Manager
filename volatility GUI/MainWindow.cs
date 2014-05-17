@@ -202,7 +202,17 @@ namespace volatility_GUI
             {
                 using (StreamReader reader = process.StandardOutput)
                 {
-                    string outputfile = output + @"\" + PluginName + @".txt";
+                    string outputfile = "";
+                    
+                    if(pidbox.Text == "")
+                    {
+                       outputfile = output + @"\" + PluginName + @".txt";
+                    }
+                    else
+                    {
+                        outputfile = output + @"\" + PluginName + "-" + "PID-" + pidbox.Text + @".txt";
+                    }
+                    
                     string result = reader.ReadToEnd();
                     Console.WriteLine(result);
                     string results = result;

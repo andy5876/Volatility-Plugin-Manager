@@ -37,3 +37,17 @@ D:\Downloads\Volatility-Plugin-Manager\Volatility-Plugin-Manager\volatility GUI\
 D:\Downloads\Volatility-Plugin-Manager\Volatility-Plugin-Manager\volatility GUI\obj\Release\volatility GUI.csproj.GenerateResource.Cache
 D:\Downloads\Volatility-Plugin-Manager\Volatility-Plugin-Manager\volatility GUI\obj\Release\Volatility Plugin Manager 1.0.exe.manifest
 D:\Downloads\Volatility-Plugin-Manager\Volatility-Plugin-Manager\volatility GUI\obj\Release\Volatility Plugin Manager 1.0.application
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\volatility_GUI.MainWindow.resources
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\volatility_GUI.Properties.Resources.resources
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\volatility GUI.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.exe.config
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.exe.manifest
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.application
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.exe
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.pdb
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.exe.manifest
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.application
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.exe
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.pdb
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\volatility GUI.csproj.ResolveComReference.cache
+D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\volatility GUI.csprojResolveAssemblyReference.cache
