@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Volatility Plugin Manager 1.0.exe" size="188928">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Volatility Plugin Manager 1.0.exe" size="178176">
       <assemblyIdentity name="Volatility Plugin Manager 1.0" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ykdsSqjgl5VLS1dO7az6JBu7UdCl2efuB2d5Jhdl89I=</dsig:DigestValue>
+        <dsig:DigestValue>INSfJFZnFjYK4G4z4CFQgzLMMf5q6RJZzq7eygozo14=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
