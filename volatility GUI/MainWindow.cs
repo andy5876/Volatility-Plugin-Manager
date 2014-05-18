@@ -200,12 +200,12 @@ namespace volatility_GUI
             }
             Process process = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo();
-            //startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = vollocation;
             startInfo.Arguments = commandlineargs;
             startInfo.RedirectStandardOutput = true;
             startInfo.UseShellExecute = false;
-            //startInfo.CreateNoWindow = true;
+            startInfo.CreateNoWindow = true;
             process.StartInfo = startInfo;
             process.Start();
             
