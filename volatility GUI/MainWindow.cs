@@ -181,19 +181,25 @@ namespace volatility_GUI
                 if (tags.Contains("PID") && pidbox.Text !="")
                 {
                     Directory.CreateDirectory(output + "\\" + PluginName + "-PID-" + pidbox.Text);
-                    commandlineargs = "-f" + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "-D" + " " + output + @"\" + PluginName + "-PID-" + pidbox.Text;
+                    commandlineargs = "-f" + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "-D" + " " + output + @"\" + PluginName + "-PID-" + pidbox.Text + " " + "--output-file=" + output + @"\" + PluginName + "-PID-" + pidbox.Text + @".txt";
                 }
                 else
                 {
                     Directory.CreateDirectory(output + "\\" + PluginName);
-                    commandlineargs = "-f " + " " + imagefile + " " + " --profile=" + profile + " " + PluginName + " " + "-D" + " " + output + @"\" + PluginName;
+                    commandlineargs = "-f " + " " + imagefile + " " + " --profile=" + profile + " " + PluginName + " " + "-D" + " " + output + @"\" + PluginName + " " + "--output-file=" + output +  @"\" + PluginName + @".txt";
                 }
                 
             }
             else
-            {
-                commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName;
-            }
+                if (!tags.Contains("PID"))
+                {
+                    commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "--output-file=" + output + @"\" + PluginName + @".txt";
+                }
+                else
+                {
+                    commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "--output-file=" + output + @"\" + PluginName + "-PID-" + pidbox.Text + @".txt";
+                }
+            
             if (tags.Contains("PID") && pidbox.Text != "")
             {
                 commandlineargs += " -p " + pidbox.Text;
@@ -203,43 +209,52 @@ namespace volatility_GUI
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = vollocation;
             startInfo.Arguments = commandlineargs;
-            startInfo.RedirectStandardOutput = true;
             startInfo.UseShellExecute = false;
             startInfo.CreateNoWindow = true;
             process.StartInfo = startInfo;
             process.Start();
             
-            if (!tags.Contains("DIR"))
-            {
-                using (StreamReader reader = process.StandardOutput)
-                {
-                    string outputfile = "";
-                    
-                    if(pidbox.Text != "" && tags.Contains("PID"))
-                    {
-                       outputfile = output + @"\" + PluginName + "-" + "PID-" + pidbox.Text + @".txt";
-                    }
-                    else
-                    {
-                        outputfile = output + @"\" + PluginName + @".txt";
-                    }
-                    
-                    string result = reader.ReadToEnd();
-                    Console.WriteLine(result);
-                    string results = result;
-                    FileStream fs = new FileStream(outputfile, FileMode.OpenOrCreate, FileAccess.Write);
-                    StreamWriter sw = new StreamWriter(fs);
-                    sw.BaseStream.Seek(0, SeekOrigin.End);
-                    sw.WriteLine("Volatility command:  " + commandlineargs);
-                    sw.WriteLine(results);
-                    sw.Flush();
-                    sw.Close();
-                }
-                
-            }
-
+           
+            
             process.WaitForExit();
             process.Close();
+            if (tags.Contains("PID") && pidbox.Text !="")
+            {
+                var tempfile = Path.GetTempFileName();
+                using (var writer = new StreamWriter(tempfile))
+                using (var reader = new StreamReader(output + @"\" + PluginName + "-PID-" + pidbox.Text + @".txt"))
+                {
+                    writer.WriteLine("VOLATILITY PLUGIN MANAGER 1.1");
+                    writer.WriteLine(DateTime.Now);
+                    writer.WriteLine("Analyst Logon:" + " " + System.Security.Principal.WindowsIdentity.GetCurrent().Name);
+                    writer.WriteLine("Volatility Command:" + " " + commandlineargs);
+                    writer.WriteLine("   ");
+                    writer.WriteLine("   ");
+                    while (!reader.EndOfStream)
+                        writer.WriteLine(reader.ReadLine());
+                }
+                File.Copy(tempfile, output + @"\" + PluginName + "-PID-" + pidbox.Text + @".txt", true);
+                File.Delete(tempfile);
+            }
+            else
+            {
+                var tempfile = Path.GetTempFileName();
+                using (var writer = new StreamWriter(tempfile))
+                using (var reader = new StreamReader(output + @"\" + PluginName + @".txt"))
+                {
+                    writer.WriteLine("VOLATILITY PLUGIN MANAGER 1.1");
+                    writer.WriteLine(DateTime.Now);
+                    writer.WriteLine("Analyst Logon:" + " " + System.Security.Principal.WindowsIdentity.GetCurrent().Name);
+                    writer.WriteLine("Volatility Command:" + " " + commandlineargs);
+                    writer.WriteLine("   ");
+                    writer.WriteLine("   ");
+                    while (!reader.EndOfStream)
+                        writer.WriteLine(reader.ReadLine());
+                }
+                File.Copy(tempfile, output + @"\" + PluginName + @".txt", true);
+                File.Delete(tempfile);
+            }
+            
             
                 
             

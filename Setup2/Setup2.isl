@@ -4392,7 +4392,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]volatility GUI.Primary output</td><td/></row>
 		<row><td>ProductCode</td><td>{517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/></row>
 		<row><td>ProductName</td><td>Volatility Plugin Manager 1.1</td><td/></row>
-		<row><td>ProductVersion</td><td>1.00.0000</td><td/></row>
+		<row><td>ProductVersion</td><td>1.1.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
