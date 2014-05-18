@@ -77,6 +77,20 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.progresslabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.atoms = new System.Windows.Forms.CheckBox();
+            this.atomscan = new System.Windows.Forms.CheckBox();
+            this.devicetree = new System.Windows.Forms.CheckBox();
+            this.deskscan = new System.Windows.Forms.CheckBox();
+            this.crashinfo = new System.Windows.Forms.CheckBox();
+            this.consoles = new System.Windows.Forms.CheckBox();
+            this.callbacks = new System.Windows.Forms.CheckBox();
+            this.bioskbd = new System.Windows.Forms.CheckBox();
+            this.dumpfiles = new System.Windows.Forms.CheckBox();
+            this.dumpcerts = new System.Windows.Forms.CheckBox();
+            this.driverscan = new System.Windows.Forms.CheckBox();
+            this.driverirp = new System.Windows.Forms.CheckBox();
+            this.dlldump = new System.Windows.Forms.CheckBox();
+            this.eventhooks = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +108,7 @@
             // 
             this.btnRun.BackColor = System.Drawing.Color.Transparent;
             this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRun.Location = new System.Drawing.Point(463, 404);
+            this.btnRun.Location = new System.Drawing.Point(465, 422);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(111, 42);
             this.btnRun.TabIndex = 19;
@@ -403,7 +417,7 @@
             this.screenshot.BackColor = System.Drawing.Color.Transparent;
             this.screenshot.Enabled = false;
             this.screenshot.ForeColor = System.Drawing.Color.Silver;
-            this.screenshot.Location = new System.Drawing.Point(704, 36);
+            this.screenshot.Location = new System.Drawing.Point(585, 36);
             this.screenshot.Name = "screenshot";
             this.screenshot.Size = new System.Drawing.Size(100, 21);
             this.screenshot.TabIndex = 30;
@@ -417,7 +431,7 @@
             this.userassist.BackColor = System.Drawing.Color.Transparent;
             this.userassist.Enabled = false;
             this.userassist.ForeColor = System.Drawing.Color.Silver;
-            this.userassist.Location = new System.Drawing.Point(704, 63);
+            this.userassist.Location = new System.Drawing.Point(585, 63);
             this.userassist.Name = "userassist";
             this.userassist.Size = new System.Drawing.Size(94, 21);
             this.userassist.TabIndex = 31;
@@ -431,7 +445,7 @@
             this.shellbags.BackColor = System.Drawing.Color.Transparent;
             this.shellbags.Enabled = false;
             this.shellbags.ForeColor = System.Drawing.Color.Silver;
-            this.shellbags.Location = new System.Drawing.Point(704, 90);
+            this.shellbags.Location = new System.Drawing.Point(585, 90);
             this.shellbags.Name = "shellbags";
             this.shellbags.Size = new System.Drawing.Size(90, 21);
             this.shellbags.TabIndex = 32;
@@ -445,7 +459,7 @@
             this.shimcache.BackColor = System.Drawing.Color.Transparent;
             this.shimcache.Enabled = false;
             this.shimcache.ForeColor = System.Drawing.Color.Silver;
-            this.shimcache.Location = new System.Drawing.Point(704, 117);
+            this.shimcache.Location = new System.Drawing.Point(585, 117);
             this.shimcache.Name = "shimcache";
             this.shimcache.Size = new System.Drawing.Size(97, 21);
             this.shimcache.TabIndex = 33;
@@ -466,7 +480,7 @@
             this.sessions.BackColor = System.Drawing.Color.Transparent;
             this.sessions.Enabled = false;
             this.sessions.ForeColor = System.Drawing.Color.Silver;
-            this.sessions.Location = new System.Drawing.Point(704, 141);
+            this.sessions.Location = new System.Drawing.Point(585, 141);
             this.sessions.Name = "sessions";
             this.sessions.Size = new System.Drawing.Size(85, 21);
             this.sessions.TabIndex = 34;
@@ -480,7 +494,7 @@
             this.vadinfo.BackColor = System.Drawing.Color.Transparent;
             this.vadinfo.Enabled = false;
             this.vadinfo.ForeColor = System.Drawing.Color.Silver;
-            this.vadinfo.Location = new System.Drawing.Point(704, 168);
+            this.vadinfo.Location = new System.Drawing.Point(585, 168);
             this.vadinfo.Name = "vadinfo";
             this.vadinfo.Size = new System.Drawing.Size(76, 21);
             this.vadinfo.TabIndex = 35;
@@ -494,7 +508,7 @@
             this.vaddump.BackColor = System.Drawing.Color.Transparent;
             this.vaddump.Enabled = false;
             this.vaddump.ForeColor = System.Drawing.Color.Silver;
-            this.vaddump.Location = new System.Drawing.Point(704, 195);
+            this.vaddump.Location = new System.Drawing.Point(585, 195);
             this.vaddump.Name = "vaddump";
             this.vaddump.Size = new System.Drawing.Size(88, 21);
             this.vaddump.TabIndex = 36;
@@ -508,13 +522,14 @@
             this.memdump.BackColor = System.Drawing.Color.Transparent;
             this.memdump.Enabled = false;
             this.memdump.ForeColor = System.Drawing.Color.Silver;
-            this.memdump.Location = new System.Drawing.Point(704, 222);
+            this.memdump.Location = new System.Drawing.Point(585, 222);
             this.memdump.Name = "memdump";
             this.memdump.Size = new System.Drawing.Size(95, 21);
             this.memdump.TabIndex = 37;
             this.memdump.Tag = "memdump,PID,DIR";
             this.memdump.Text = "memdump";
             this.memdump.UseVisualStyleBackColor = false;
+            this.memdump.CheckedChanged += new System.EventHandler(this.memdump_CheckedChanged);
             // 
             // handles
             // 
@@ -522,7 +537,7 @@
             this.handles.BackColor = System.Drawing.Color.Transparent;
             this.handles.Enabled = false;
             this.handles.ForeColor = System.Drawing.Color.Silver;
-            this.handles.Location = new System.Drawing.Point(703, 247);
+            this.handles.Location = new System.Drawing.Point(584, 247);
             this.handles.Name = "handles";
             this.handles.Size = new System.Drawing.Size(80, 21);
             this.handles.TabIndex = 38;
@@ -536,7 +551,7 @@
             this.privs.BackColor = System.Drawing.Color.Transparent;
             this.privs.Enabled = false;
             this.privs.ForeColor = System.Drawing.Color.Silver;
-            this.privs.Location = new System.Drawing.Point(704, 274);
+            this.privs.Location = new System.Drawing.Point(585, 274);
             this.privs.Name = "privs";
             this.privs.Size = new System.Drawing.Size(60, 21);
             this.privs.TabIndex = 39;
@@ -570,7 +585,7 @@
             this.threads.BackColor = System.Drawing.Color.Transparent;
             this.threads.Enabled = false;
             this.threads.ForeColor = System.Drawing.Color.Silver;
-            this.threads.Location = new System.Drawing.Point(704, 328);
+            this.threads.Location = new System.Drawing.Point(585, 328);
             this.threads.Name = "threads";
             this.threads.Size = new System.Drawing.Size(78, 21);
             this.threads.TabIndex = 42;
@@ -584,7 +599,7 @@
             this.envars.BackColor = System.Drawing.Color.Transparent;
             this.envars.Enabled = false;
             this.envars.ForeColor = System.Drawing.Color.Silver;
-            this.envars.Location = new System.Drawing.Point(704, 301);
+            this.envars.Location = new System.Drawing.Point(585, 301);
             this.envars.Name = "envars";
             this.envars.Size = new System.Drawing.Size(73, 21);
             this.envars.TabIndex = 43;
@@ -598,7 +613,7 @@
             this.iehistory.BackColor = System.Drawing.Color.Transparent;
             this.iehistory.Enabled = false;
             this.iehistory.ForeColor = System.Drawing.Color.Silver;
-            this.iehistory.Location = new System.Drawing.Point(704, 353);
+            this.iehistory.Location = new System.Drawing.Point(585, 353);
             this.iehistory.Name = "iehistory";
             this.iehistory.Size = new System.Drawing.Size(83, 21);
             this.iehistory.TabIndex = 44;
@@ -612,7 +627,7 @@
             this.malfind.BackColor = System.Drawing.Color.Transparent;
             this.malfind.Enabled = false;
             this.malfind.ForeColor = System.Drawing.Color.Silver;
-            this.malfind.Location = new System.Drawing.Point(703, 380);
+            this.malfind.Location = new System.Drawing.Point(584, 380);
             this.malfind.Name = "malfind";
             this.malfind.Size = new System.Drawing.Size(75, 21);
             this.malfind.TabIndex = 45;
@@ -637,7 +652,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancel.Location = new System.Drawing.Point(704, 404);
+            this.btnCancel.Location = new System.Drawing.Point(704, 422);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(111, 42);
             this.btnCancel.TabIndex = 48;
@@ -675,6 +690,202 @@
             this.label8.TabIndex = 53;
             this.label8.Text = "Plugin Manager";
             // 
+            // atoms
+            // 
+            this.atoms.AutoSize = true;
+            this.atoms.BackColor = System.Drawing.Color.Transparent;
+            this.atoms.Enabled = false;
+            this.atoms.ForeColor = System.Drawing.Color.Silver;
+            this.atoms.Location = new System.Drawing.Point(704, 35);
+            this.atoms.Name = "atoms";
+            this.atoms.Size = new System.Drawing.Size(68, 21);
+            this.atoms.TabIndex = 54;
+            this.atoms.Tag = "atoms";
+            this.atoms.Text = "atoms";
+            this.atoms.UseVisualStyleBackColor = false;
+            // 
+            // atomscan
+            // 
+            this.atomscan.AutoSize = true;
+            this.atomscan.BackColor = System.Drawing.Color.Transparent;
+            this.atomscan.Enabled = false;
+            this.atomscan.ForeColor = System.Drawing.Color.Silver;
+            this.atomscan.Location = new System.Drawing.Point(703, 63);
+            this.atomscan.Name = "atomscan";
+            this.atomscan.Size = new System.Drawing.Size(91, 21);
+            this.atomscan.TabIndex = 55;
+            this.atomscan.Tag = "atomscan";
+            this.atomscan.Text = "atomscan";
+            this.atomscan.UseVisualStyleBackColor = false;
+            // 
+            // devicetree
+            // 
+            this.devicetree.AutoSize = true;
+            this.devicetree.BackColor = System.Drawing.Color.Transparent;
+            this.devicetree.Enabled = false;
+            this.devicetree.ForeColor = System.Drawing.Color.Silver;
+            this.devicetree.Location = new System.Drawing.Point(704, 222);
+            this.devicetree.Name = "devicetree";
+            this.devicetree.Size = new System.Drawing.Size(96, 21);
+            this.devicetree.TabIndex = 56;
+            this.devicetree.Tag = "devicetree";
+            this.devicetree.Text = "devicetree";
+            this.devicetree.UseVisualStyleBackColor = false;
+            // 
+            // deskscan
+            // 
+            this.deskscan.AutoSize = true;
+            this.deskscan.BackColor = System.Drawing.Color.Transparent;
+            this.deskscan.Enabled = false;
+            this.deskscan.ForeColor = System.Drawing.Color.Silver;
+            this.deskscan.Location = new System.Drawing.Point(704, 195);
+            this.deskscan.Name = "deskscan";
+            this.deskscan.Size = new System.Drawing.Size(90, 21);
+            this.deskscan.TabIndex = 57;
+            this.deskscan.Tag = "deskscan";
+            this.deskscan.Text = "deskscan";
+            this.deskscan.UseVisualStyleBackColor = false;
+            // 
+            // crashinfo
+            // 
+            this.crashinfo.AutoSize = true;
+            this.crashinfo.BackColor = System.Drawing.Color.Transparent;
+            this.crashinfo.Enabled = false;
+            this.crashinfo.ForeColor = System.Drawing.Color.Silver;
+            this.crashinfo.Location = new System.Drawing.Point(703, 168);
+            this.crashinfo.Name = "crashinfo";
+            this.crashinfo.Size = new System.Drawing.Size(88, 21);
+            this.crashinfo.TabIndex = 58;
+            this.crashinfo.Tag = "crashinfo";
+            this.crashinfo.Text = "crashinfo";
+            this.crashinfo.UseVisualStyleBackColor = false;
+            // 
+            // consoles
+            // 
+            this.consoles.AutoSize = true;
+            this.consoles.BackColor = System.Drawing.Color.Transparent;
+            this.consoles.Enabled = false;
+            this.consoles.ForeColor = System.Drawing.Color.Silver;
+            this.consoles.Location = new System.Drawing.Point(703, 141);
+            this.consoles.Name = "consoles";
+            this.consoles.Size = new System.Drawing.Size(86, 21);
+            this.consoles.TabIndex = 59;
+            this.consoles.Tag = "consoles";
+            this.consoles.Text = "consoles";
+            this.consoles.UseVisualStyleBackColor = false;
+            // 
+            // callbacks
+            // 
+            this.callbacks.AutoSize = true;
+            this.callbacks.BackColor = System.Drawing.Color.Transparent;
+            this.callbacks.Enabled = false;
+            this.callbacks.ForeColor = System.Drawing.Color.Silver;
+            this.callbacks.Location = new System.Drawing.Point(703, 117);
+            this.callbacks.Name = "callbacks";
+            this.callbacks.Size = new System.Drawing.Size(88, 21);
+            this.callbacks.TabIndex = 60;
+            this.callbacks.Tag = "callbacks";
+            this.callbacks.Text = "callbacks";
+            this.callbacks.UseVisualStyleBackColor = false;
+            // 
+            // bioskbd
+            // 
+            this.bioskbd.AutoSize = true;
+            this.bioskbd.BackColor = System.Drawing.Color.Transparent;
+            this.bioskbd.Enabled = false;
+            this.bioskbd.ForeColor = System.Drawing.Color.Silver;
+            this.bioskbd.Location = new System.Drawing.Point(704, 90);
+            this.bioskbd.Name = "bioskbd";
+            this.bioskbd.Size = new System.Drawing.Size(79, 21);
+            this.bioskbd.TabIndex = 61;
+            this.bioskbd.Tag = "bioskbd";
+            this.bioskbd.Text = "bioskbd";
+            this.bioskbd.UseVisualStyleBackColor = false;
+            // 
+            // dumpfiles
+            // 
+            this.dumpfiles.AutoSize = true;
+            this.dumpfiles.BackColor = System.Drawing.Color.Transparent;
+            this.dumpfiles.Enabled = false;
+            this.dumpfiles.ForeColor = System.Drawing.Color.Silver;
+            this.dumpfiles.Location = new System.Drawing.Point(704, 353);
+            this.dumpfiles.Name = "dumpfiles";
+            this.dumpfiles.Size = new System.Drawing.Size(90, 21);
+            this.dumpfiles.TabIndex = 62;
+            this.dumpfiles.Tag = "dumpfiles,PID,DIR";
+            this.dumpfiles.Text = "dumpfiles";
+            this.dumpfiles.UseVisualStyleBackColor = false;
+            // 
+            // dumpcerts
+            // 
+            this.dumpcerts.AutoSize = true;
+            this.dumpcerts.BackColor = System.Drawing.Color.Transparent;
+            this.dumpcerts.Enabled = false;
+            this.dumpcerts.ForeColor = System.Drawing.Color.Silver;
+            this.dumpcerts.Location = new System.Drawing.Point(704, 328);
+            this.dumpcerts.Name = "dumpcerts";
+            this.dumpcerts.Size = new System.Drawing.Size(96, 21);
+            this.dumpcerts.TabIndex = 63;
+            this.dumpcerts.Tag = "dumpcerts,PID,DIR";
+            this.dumpcerts.Text = "dumpcerts";
+            this.dumpcerts.UseVisualStyleBackColor = false;
+            // 
+            // driverscan
+            // 
+            this.driverscan.AutoSize = true;
+            this.driverscan.BackColor = System.Drawing.Color.Transparent;
+            this.driverscan.Enabled = false;
+            this.driverscan.ForeColor = System.Drawing.Color.Silver;
+            this.driverscan.Location = new System.Drawing.Point(704, 303);
+            this.driverscan.Name = "driverscan";
+            this.driverscan.Size = new System.Drawing.Size(96, 21);
+            this.driverscan.TabIndex = 64;
+            this.driverscan.Tag = "driverscan";
+            this.driverscan.Text = "driverscan";
+            this.driverscan.UseVisualStyleBackColor = false;
+            // 
+            // driverirp
+            // 
+            this.driverirp.AutoSize = true;
+            this.driverirp.BackColor = System.Drawing.Color.Transparent;
+            this.driverirp.Enabled = false;
+            this.driverirp.ForeColor = System.Drawing.Color.Silver;
+            this.driverirp.Location = new System.Drawing.Point(704, 276);
+            this.driverirp.Name = "driverirp";
+            this.driverirp.Size = new System.Drawing.Size(82, 21);
+            this.driverirp.TabIndex = 65;
+            this.driverirp.Tag = "driverirp";
+            this.driverirp.Text = "driverirp";
+            this.driverirp.UseVisualStyleBackColor = false;
+            // 
+            // dlldump
+            // 
+            this.dlldump.AutoSize = true;
+            this.dlldump.BackColor = System.Drawing.Color.Transparent;
+            this.dlldump.Enabled = false;
+            this.dlldump.ForeColor = System.Drawing.Color.Silver;
+            this.dlldump.Location = new System.Drawing.Point(704, 249);
+            this.dlldump.Name = "dlldump";
+            this.dlldump.Size = new System.Drawing.Size(79, 21);
+            this.dlldump.TabIndex = 66;
+            this.dlldump.Tag = "dlldump,PID,DIR";
+            this.dlldump.Text = "dlldump";
+            this.dlldump.UseVisualStyleBackColor = false;
+            // 
+            // eventhooks
+            // 
+            this.eventhooks.AutoSize = true;
+            this.eventhooks.BackColor = System.Drawing.Color.Transparent;
+            this.eventhooks.Enabled = false;
+            this.eventhooks.ForeColor = System.Drawing.Color.Silver;
+            this.eventhooks.Location = new System.Drawing.Point(704, 380);
+            this.eventhooks.Name = "eventhooks";
+            this.eventhooks.Size = new System.Drawing.Size(103, 21);
+            this.eventhooks.TabIndex = 67;
+            this.eventhooks.Tag = "eventhooks";
+            this.eventhooks.Text = "eventhooks";
+            this.eventhooks.UseVisualStyleBackColor = false;
+            // 
             // MainWindow
             // 
             this.AllowDrop = true;
@@ -682,7 +893,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::volatility_GUI.Properties.Resources.VPMbackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(874, 465);
+            this.ClientSize = new System.Drawing.Size(1037, 476);
+            this.Controls.Add(this.eventhooks);
+            this.Controls.Add(this.dlldump);
+            this.Controls.Add(this.driverirp);
+            this.Controls.Add(this.driverscan);
+            this.Controls.Add(this.dumpcerts);
+            this.Controls.Add(this.dumpfiles);
+            this.Controls.Add(this.bioskbd);
+            this.Controls.Add(this.callbacks);
+            this.Controls.Add(this.consoles);
+            this.Controls.Add(this.crashinfo);
+            this.Controls.Add(this.deskscan);
+            this.Controls.Add(this.devicetree);
+            this.Controls.Add(this.atomscan);
+            this.Controls.Add(this.atoms);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.progresslabel);
             this.Controls.Add(this.progressBar1);
@@ -792,6 +1017,20 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label progresslabel;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox atoms;
+        private System.Windows.Forms.CheckBox atomscan;
+        private System.Windows.Forms.CheckBox devicetree;
+        private System.Windows.Forms.CheckBox deskscan;
+        private System.Windows.Forms.CheckBox crashinfo;
+        private System.Windows.Forms.CheckBox consoles;
+        private System.Windows.Forms.CheckBox callbacks;
+        private System.Windows.Forms.CheckBox bioskbd;
+        private System.Windows.Forms.CheckBox dumpfiles;
+        private System.Windows.Forms.CheckBox dumpcerts;
+        private System.Windows.Forms.CheckBox driverscan;
+        private System.Windows.Forms.CheckBox driverirp;
+        private System.Windows.Forms.CheckBox dlldump;
+        private System.Windows.Forms.CheckBox eventhooks;
     }
 }
 

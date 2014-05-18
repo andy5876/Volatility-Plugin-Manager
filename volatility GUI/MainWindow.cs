@@ -43,7 +43,7 @@ namespace volatility_GUI
         List<CheckBox> CheckBoxes = new List<CheckBox>();
         int ModulesSelected = 0;
         string vollocation = @"C:\Program Files (x86)\Lethal Forensics\VPM\Volatility.exe";
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -109,7 +109,7 @@ namespace volatility_GUI
             backgroundWorker1.ReportProgress(progress);
             string imagefile = imagefiletextbox.Text;
             string output = outputtextbox.Text;
-            string profile = profiletextbox.Text;
+            
 
 
 
@@ -175,14 +175,24 @@ namespace volatility_GUI
             string commandlineargs;
             string[] tags = Tag.ToString().Split(',');
             string PluginName = tags[0];
+            string profile = profiletextbox.Text;
             if (tags.Contains("DIR"))
             {
-                Directory.CreateDirectory(output + "\\" + PluginName);
-                commandlineargs = "-f " + imagefile + " " + PluginName + " -D " + output + @"\" + PluginName;
+                if (tags.Contains("PID") && pidbox.Text !="")
+                {
+                    Directory.CreateDirectory(output + "\\" + PluginName + "-PID-" + pidbox.Text);
+                    commandlineargs = "-f" + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "-D" + " " + output + @"\" + PluginName + "-PID-" + pidbox.Text;
+                }
+                else
+                {
+                    Directory.CreateDirectory(output + "\\" + PluginName);
+                    commandlineargs = "-f " + " " + imagefile + " " + " --profile=" + profile + " " + PluginName + " " + "-D" + " " + output + @"\" + PluginName;
+                }
+                
             }
             else
             {
-                commandlineargs = "-f " + imagefile + " " + PluginName;
+                commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName;
             }
             if (tags.Contains("PID") && pidbox.Text != "")
             {
@@ -190,27 +200,28 @@ namespace volatility_GUI
             }
             Process process = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            //startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = vollocation;
             startInfo.Arguments = commandlineargs;
             startInfo.RedirectStandardOutput = true;
             startInfo.UseShellExecute = false;
-            startInfo.CreateNoWindow = true;
+            //startInfo.CreateNoWindow = true;
             process.StartInfo = startInfo;
             process.Start();
+            
             if (!tags.Contains("DIR"))
             {
                 using (StreamReader reader = process.StandardOutput)
                 {
                     string outputfile = "";
                     
-                    if(pidbox.Text == "")
+                    if(pidbox.Text != "" && tags.Contains("PID"))
                     {
-                       outputfile = output + @"\" + PluginName + @".txt";
+                       outputfile = output + @"\" + PluginName + "-" + "PID-" + pidbox.Text + @".txt";
                     }
                     else
                     {
-                        outputfile = output + @"\" + PluginName + "-" + "PID-" + pidbox.Text + @".txt";
+                        outputfile = output + @"\" + PluginName + @".txt";
                     }
                     
                     string result = reader.ReadToEnd();
@@ -226,12 +237,15 @@ namespace volatility_GUI
                 }
                 
             }
-           
-            
-                
+
             process.WaitForExit();
             process.Close();
+            
+                
+            
+            
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -288,6 +302,11 @@ namespace volatility_GUI
         }
 
         private void connsandsocks_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void memdump_CheckedChanged(object sender, EventArgs e)
         {
 
         }
