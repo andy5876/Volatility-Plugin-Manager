@@ -191,13 +191,13 @@ namespace volatility_GUI
                 
             }
             else
-                if (!tags.Contains("PID"))
+                if (tags.Contains("PID") && pidbox.Text != "")
                 {
-                    commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "--output-file=" + output + @"\" + PluginName + @".txt";
+                    commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "--output-file=" + output + @"\" + PluginName + "-PID-" + pidbox.Text + @".txt";
                 }
                 else
                 {
-                    commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "--output-file=" + output + @"\" + PluginName + "-PID-" + pidbox.Text + @".txt";
+                    commandlineargs = "-f " + " " + imagefile + " " + "--profile=" + profile + " " + PluginName + " " + "--output-file=" + output + @"\" + PluginName + @".txt";
                 }
             
             if (tags.Contains("PID") && pidbox.Text != "")

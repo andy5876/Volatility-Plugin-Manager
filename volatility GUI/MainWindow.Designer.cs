@@ -91,6 +91,34 @@
             this.driverirp = new System.Windows.Forms.CheckBox();
             this.dlldump = new System.Windows.Forms.CheckBox();
             this.eventhooks = new System.Windows.Forms.CheckBox();
+            this.filescan = new System.Windows.Forms.CheckBox();
+            this.gahti = new System.Windows.Forms.CheckBox();
+            this.gditimers = new System.Windows.Forms.CheckBox();
+            this.gdt = new System.Windows.Forms.CheckBox();
+            this.getservicesids = new System.Windows.Forms.CheckBox();
+            this.hivelist = new System.Windows.Forms.CheckBox();
+            this.hibinfo = new System.Windows.Forms.CheckBox();
+            this.hivescan = new System.Windows.Forms.CheckBox();
+            this.idt = new System.Windows.Forms.CheckBox();
+            this.kdbgscan = new System.Windows.Forms.CheckBox();
+            this.kpcrscan = new System.Windows.Forms.CheckBox();
+            this.ldrmodules = new System.Windows.Forms.CheckBox();
+            this.mbrparser = new System.Windows.Forms.CheckBox();
+            this.messagehooks = new System.Windows.Forms.CheckBox();
+            this.userhandles = new System.Windows.Forms.CheckBox();
+            this.unloadedmodules = new System.Windows.Forms.CheckBox();
+            this.timers = new System.Windows.Forms.CheckBox();
+            this.timeliner = new System.Windows.Forms.CheckBox();
+            this.thrdscan = new System.Windows.Forms.CheckBox();
+            this.symlinkscan = new System.Windows.Forms.CheckBox();
+            this.ssdt = new System.Windows.Forms.CheckBox();
+            this.checkbox = new System.Windows.Forms.CheckBox();
+            this.psxview = new System.Windows.Forms.CheckBox();
+            this.procmemdump = new System.Windows.Forms.CheckBox();
+            this.procexedump = new System.Windows.Forms.CheckBox();
+            this.mutantscan = new System.Windows.Forms.CheckBox();
+            this.modules = new System.Windows.Forms.CheckBox();
+            this.mftparser = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -878,13 +906,405 @@
             this.eventhooks.BackColor = System.Drawing.Color.Transparent;
             this.eventhooks.Enabled = false;
             this.eventhooks.ForeColor = System.Drawing.Color.Silver;
-            this.eventhooks.Location = new System.Drawing.Point(704, 380);
+            this.eventhooks.Location = new System.Drawing.Point(703, 380);
             this.eventhooks.Name = "eventhooks";
             this.eventhooks.Size = new System.Drawing.Size(103, 21);
             this.eventhooks.TabIndex = 67;
             this.eventhooks.Tag = "eventhooks";
             this.eventhooks.Text = "eventhooks";
             this.eventhooks.UseVisualStyleBackColor = false;
+            // 
+            // filescan
+            // 
+            this.filescan.AutoSize = true;
+            this.filescan.BackColor = System.Drawing.Color.Transparent;
+            this.filescan.Enabled = false;
+            this.filescan.ForeColor = System.Drawing.Color.Silver;
+            this.filescan.Location = new System.Drawing.Point(813, 36);
+            this.filescan.Name = "filescan";
+            this.filescan.Size = new System.Drawing.Size(78, 21);
+            this.filescan.TabIndex = 68;
+            this.filescan.Tag = "filescan";
+            this.filescan.Text = "filescan";
+            this.filescan.UseVisualStyleBackColor = false;
+            // 
+            // gahti
+            // 
+            this.gahti.AutoSize = true;
+            this.gahti.BackColor = System.Drawing.Color.Transparent;
+            this.gahti.Enabled = false;
+            this.gahti.ForeColor = System.Drawing.Color.Silver;
+            this.gahti.Location = new System.Drawing.Point(813, 65);
+            this.gahti.Name = "gahti";
+            this.gahti.Size = new System.Drawing.Size(61, 21);
+            this.gahti.TabIndex = 69;
+            this.gahti.Tag = "gahti";
+            this.gahti.Text = "gahti";
+            this.gahti.UseVisualStyleBackColor = false;
+            // 
+            // gditimers
+            // 
+            this.gditimers.AutoSize = true;
+            this.gditimers.BackColor = System.Drawing.Color.Transparent;
+            this.gditimers.Enabled = false;
+            this.gditimers.ForeColor = System.Drawing.Color.Silver;
+            this.gditimers.Location = new System.Drawing.Point(813, 90);
+            this.gditimers.Name = "gditimers";
+            this.gditimers.Size = new System.Drawing.Size(87, 21);
+            this.gditimers.TabIndex = 70;
+            this.gditimers.Tag = "gditimers";
+            this.gditimers.Text = "gditimers";
+            this.gditimers.UseVisualStyleBackColor = false;
+            // 
+            // gdt
+            // 
+            this.gdt.AutoSize = true;
+            this.gdt.BackColor = System.Drawing.Color.Transparent;
+            this.gdt.Enabled = false;
+            this.gdt.ForeColor = System.Drawing.Color.Silver;
+            this.gdt.Location = new System.Drawing.Point(813, 117);
+            this.gdt.Name = "gdt";
+            this.gdt.Size = new System.Drawing.Size(50, 21);
+            this.gdt.TabIndex = 71;
+            this.gdt.Tag = "gdt";
+            this.gdt.Text = "gdt";
+            this.gdt.UseVisualStyleBackColor = false;
+            // 
+            // getservicesids
+            // 
+            this.getservicesids.AutoSize = true;
+            this.getservicesids.BackColor = System.Drawing.Color.Transparent;
+            this.getservicesids.Enabled = false;
+            this.getservicesids.ForeColor = System.Drawing.Color.Silver;
+            this.getservicesids.Location = new System.Drawing.Point(813, 141);
+            this.getservicesids.Name = "getservicesids";
+            this.getservicesids.Size = new System.Drawing.Size(120, 21);
+            this.getservicesids.TabIndex = 72;
+            this.getservicesids.Tag = "getservicesids";
+            this.getservicesids.Text = "getservicesids";
+            this.getservicesids.UseVisualStyleBackColor = false;
+            // 
+            // hivelist
+            // 
+            this.hivelist.AutoSize = true;
+            this.hivelist.BackColor = System.Drawing.Color.Transparent;
+            this.hivelist.Enabled = false;
+            this.hivelist.ForeColor = System.Drawing.Color.Silver;
+            this.hivelist.Location = new System.Drawing.Point(813, 168);
+            this.hivelist.Name = "hivelist";
+            this.hivelist.Size = new System.Drawing.Size(73, 21);
+            this.hivelist.TabIndex = 73;
+            this.hivelist.Tag = "hivelist";
+            this.hivelist.Text = "hivelist";
+            this.hivelist.UseVisualStyleBackColor = false;
+            // 
+            // hibinfo
+            // 
+            this.hibinfo.AutoSize = true;
+            this.hibinfo.BackColor = System.Drawing.Color.Transparent;
+            this.hibinfo.Enabled = false;
+            this.hibinfo.ForeColor = System.Drawing.Color.Silver;
+            this.hibinfo.Location = new System.Drawing.Point(813, 195);
+            this.hibinfo.Name = "hibinfo";
+            this.hibinfo.Size = new System.Drawing.Size(72, 21);
+            this.hibinfo.TabIndex = 74;
+            this.hibinfo.Tag = "hibinfo";
+            this.hibinfo.Text = "hibinfo";
+            this.hibinfo.UseVisualStyleBackColor = false;
+            // 
+            // hivescan
+            // 
+            this.hivescan.AutoSize = true;
+            this.hivescan.BackColor = System.Drawing.Color.Transparent;
+            this.hivescan.Enabled = false;
+            this.hivescan.ForeColor = System.Drawing.Color.Silver;
+            this.hivescan.Location = new System.Drawing.Point(813, 220);
+            this.hivescan.Name = "hivescan";
+            this.hivescan.Size = new System.Drawing.Size(86, 21);
+            this.hivescan.TabIndex = 75;
+            this.hivescan.Tag = "hivescan";
+            this.hivescan.Text = "hivescan";
+            this.hivescan.UseVisualStyleBackColor = false;
+            // 
+            // idt
+            // 
+            this.idt.AutoSize = true;
+            this.idt.BackColor = System.Drawing.Color.Transparent;
+            this.idt.Enabled = false;
+            this.idt.ForeColor = System.Drawing.Color.Silver;
+            this.idt.Location = new System.Drawing.Point(813, 247);
+            this.idt.Name = "idt";
+            this.idt.Size = new System.Drawing.Size(45, 21);
+            this.idt.TabIndex = 76;
+            this.idt.Tag = "idt";
+            this.idt.Text = "idt";
+            this.idt.UseVisualStyleBackColor = false;
+            // 
+            // kdbgscan
+            // 
+            this.kdbgscan.AutoSize = true;
+            this.kdbgscan.BackColor = System.Drawing.Color.Transparent;
+            this.kdbgscan.Enabled = false;
+            this.kdbgscan.ForeColor = System.Drawing.Color.Silver;
+            this.kdbgscan.Location = new System.Drawing.Point(813, 276);
+            this.kdbgscan.Name = "kdbgscan";
+            this.kdbgscan.Size = new System.Drawing.Size(91, 21);
+            this.kdbgscan.TabIndex = 77;
+            this.kdbgscan.Tag = "kdbgscan";
+            this.kdbgscan.Text = "kdbgscan";
+            this.kdbgscan.UseVisualStyleBackColor = false;
+            // 
+            // kpcrscan
+            // 
+            this.kpcrscan.AutoSize = true;
+            this.kpcrscan.BackColor = System.Drawing.Color.Transparent;
+            this.kpcrscan.Enabled = false;
+            this.kpcrscan.ForeColor = System.Drawing.Color.Silver;
+            this.kpcrscan.Location = new System.Drawing.Point(813, 301);
+            this.kpcrscan.Name = "kpcrscan";
+            this.kpcrscan.Size = new System.Drawing.Size(87, 21);
+            this.kpcrscan.TabIndex = 78;
+            this.kpcrscan.Tag = "kpcrscan";
+            this.kpcrscan.Text = "kpcrscan";
+            this.kpcrscan.UseVisualStyleBackColor = false;
+            // 
+            // ldrmodules
+            // 
+            this.ldrmodules.AutoSize = true;
+            this.ldrmodules.BackColor = System.Drawing.Color.Transparent;
+            this.ldrmodules.Enabled = false;
+            this.ldrmodules.ForeColor = System.Drawing.Color.Silver;
+            this.ldrmodules.Location = new System.Drawing.Point(813, 328);
+            this.ldrmodules.Name = "ldrmodules";
+            this.ldrmodules.Size = new System.Drawing.Size(99, 21);
+            this.ldrmodules.TabIndex = 79;
+            this.ldrmodules.Tag = "ldrmodules";
+            this.ldrmodules.Text = "ldrmodules";
+            this.ldrmodules.UseVisualStyleBackColor = false;
+            // 
+            // mbrparser
+            // 
+            this.mbrparser.AutoSize = true;
+            this.mbrparser.BackColor = System.Drawing.Color.Transparent;
+            this.mbrparser.Enabled = false;
+            this.mbrparser.ForeColor = System.Drawing.Color.Silver;
+            this.mbrparser.Location = new System.Drawing.Point(813, 353);
+            this.mbrparser.Name = "mbrparser";
+            this.mbrparser.Size = new System.Drawing.Size(95, 21);
+            this.mbrparser.TabIndex = 80;
+            this.mbrparser.Tag = "mbrparser";
+            this.mbrparser.Text = "mbrparser";
+            this.mbrparser.UseVisualStyleBackColor = false;
+            // 
+            // messagehooks
+            // 
+            this.messagehooks.AutoSize = true;
+            this.messagehooks.BackColor = System.Drawing.Color.Transparent;
+            this.messagehooks.Enabled = false;
+            this.messagehooks.ForeColor = System.Drawing.Color.Silver;
+            this.messagehooks.Location = new System.Drawing.Point(813, 380);
+            this.messagehooks.Name = "messagehooks";
+            this.messagehooks.Size = new System.Drawing.Size(125, 21);
+            this.messagehooks.TabIndex = 81;
+            this.messagehooks.Tag = "messagehooks";
+            this.messagehooks.Text = "messagehooks";
+            this.messagehooks.UseVisualStyleBackColor = false;
+            // 
+            // userhandles
+            // 
+            this.userhandles.AutoSize = true;
+            this.userhandles.BackColor = System.Drawing.Color.Transparent;
+            this.userhandles.Enabled = false;
+            this.userhandles.ForeColor = System.Drawing.Color.Silver;
+            this.userhandles.Location = new System.Drawing.Point(948, 379);
+            this.userhandles.Name = "userhandles";
+            this.userhandles.Size = new System.Drawing.Size(108, 21);
+            this.userhandles.TabIndex = 95;
+            this.userhandles.Tag = "userhandles";
+            this.userhandles.Text = "userhandles";
+            this.userhandles.UseVisualStyleBackColor = false;
+            // 
+            // unloadedmodules
+            // 
+            this.unloadedmodules.AutoSize = true;
+            this.unloadedmodules.BackColor = System.Drawing.Color.Transparent;
+            this.unloadedmodules.Enabled = false;
+            this.unloadedmodules.ForeColor = System.Drawing.Color.Silver;
+            this.unloadedmodules.Location = new System.Drawing.Point(948, 352);
+            this.unloadedmodules.Name = "unloadedmodules";
+            this.unloadedmodules.Size = new System.Drawing.Size(142, 21);
+            this.unloadedmodules.TabIndex = 94;
+            this.unloadedmodules.Tag = "unloadedmodules";
+            this.unloadedmodules.Text = "unloadedmodules";
+            this.unloadedmodules.UseVisualStyleBackColor = false;
+            // 
+            // timers
+            // 
+            this.timers.AutoSize = true;
+            this.timers.BackColor = System.Drawing.Color.Transparent;
+            this.timers.Enabled = false;
+            this.timers.ForeColor = System.Drawing.Color.Silver;
+            this.timers.Location = new System.Drawing.Point(948, 327);
+            this.timers.Name = "timers";
+            this.timers.Size = new System.Drawing.Size(68, 21);
+            this.timers.TabIndex = 93;
+            this.timers.Tag = "timres";
+            this.timers.Text = "timers";
+            this.timers.UseVisualStyleBackColor = false;
+            // 
+            // timeliner
+            // 
+            this.timeliner.AutoSize = true;
+            this.timeliner.BackColor = System.Drawing.Color.Transparent;
+            this.timeliner.Enabled = false;
+            this.timeliner.ForeColor = System.Drawing.Color.Silver;
+            this.timeliner.Location = new System.Drawing.Point(948, 300);
+            this.timeliner.Name = "timeliner";
+            this.timeliner.Size = new System.Drawing.Size(83, 21);
+            this.timeliner.TabIndex = 92;
+            this.timeliner.Tag = "timeliner";
+            this.timeliner.Text = "timeliner";
+            this.timeliner.UseVisualStyleBackColor = false;
+            // 
+            // thrdscan
+            // 
+            this.thrdscan.AutoSize = true;
+            this.thrdscan.BackColor = System.Drawing.Color.Transparent;
+            this.thrdscan.Enabled = false;
+            this.thrdscan.ForeColor = System.Drawing.Color.Silver;
+            this.thrdscan.Location = new System.Drawing.Point(948, 275);
+            this.thrdscan.Name = "thrdscan";
+            this.thrdscan.Size = new System.Drawing.Size(85, 21);
+            this.thrdscan.TabIndex = 91;
+            this.thrdscan.Tag = "thrdscan";
+            this.thrdscan.Text = "thrdscan";
+            this.thrdscan.UseVisualStyleBackColor = false;
+            // 
+            // symlinkscan
+            // 
+            this.symlinkscan.AutoSize = true;
+            this.symlinkscan.BackColor = System.Drawing.Color.Transparent;
+            this.symlinkscan.Enabled = false;
+            this.symlinkscan.ForeColor = System.Drawing.Color.Silver;
+            this.symlinkscan.Location = new System.Drawing.Point(948, 246);
+            this.symlinkscan.Name = "symlinkscan";
+            this.symlinkscan.Size = new System.Drawing.Size(106, 21);
+            this.symlinkscan.TabIndex = 90;
+            this.symlinkscan.Tag = "symlinkscan";
+            this.symlinkscan.Text = "symlinkscan";
+            this.symlinkscan.UseVisualStyleBackColor = false;
+            // 
+            // ssdt
+            // 
+            this.ssdt.AutoSize = true;
+            this.ssdt.BackColor = System.Drawing.Color.Transparent;
+            this.ssdt.Enabled = false;
+            this.ssdt.ForeColor = System.Drawing.Color.Silver;
+            this.ssdt.Location = new System.Drawing.Point(948, 219);
+            this.ssdt.Name = "ssdt";
+            this.ssdt.Size = new System.Drawing.Size(56, 21);
+            this.ssdt.TabIndex = 89;
+            this.ssdt.Tag = "ssdt";
+            this.ssdt.Text = "ssdt";
+            this.ssdt.UseVisualStyleBackColor = false;
+            // 
+            // checkbox
+            // 
+            this.checkbox.AutoSize = true;
+            this.checkbox.BackColor = System.Drawing.Color.Transparent;
+            this.checkbox.Enabled = false;
+            this.checkbox.ForeColor = System.Drawing.Color.Silver;
+            this.checkbox.Location = new System.Drawing.Point(948, 194);
+            this.checkbox.Name = "checkbox";
+            this.checkbox.Size = new System.Drawing.Size(78, 21);
+            this.checkbox.TabIndex = 88;
+            this.checkbox.Tag = "psxview";
+            this.checkbox.Text = "psxview";
+            this.checkbox.UseVisualStyleBackColor = false;
+            // 
+            // psxview
+            // 
+            this.psxview.AutoSize = true;
+            this.psxview.BackColor = System.Drawing.Color.Transparent;
+            this.psxview.Enabled = false;
+            this.psxview.ForeColor = System.Drawing.Color.Silver;
+            this.psxview.Location = new System.Drawing.Point(948, 167);
+            this.psxview.Name = "psxview";
+            this.psxview.Size = new System.Drawing.Size(78, 21);
+            this.psxview.TabIndex = 87;
+            this.psxview.Tag = "psxview";
+            this.psxview.Text = "psxview";
+            this.psxview.UseVisualStyleBackColor = false;
+            // 
+            // procmemdump
+            // 
+            this.procmemdump.AutoSize = true;
+            this.procmemdump.BackColor = System.Drawing.Color.Transparent;
+            this.procmemdump.Enabled = false;
+            this.procmemdump.ForeColor = System.Drawing.Color.Silver;
+            this.procmemdump.Location = new System.Drawing.Point(948, 140);
+            this.procmemdump.Name = "procmemdump";
+            this.procmemdump.Size = new System.Drawing.Size(123, 21);
+            this.procmemdump.TabIndex = 86;
+            this.procmemdump.Tag = "procmemdump,PID,DIR";
+            this.procmemdump.Text = "procmemdump";
+            this.procmemdump.UseVisualStyleBackColor = false;
+            // 
+            // procexedump
+            // 
+            this.procexedump.AutoSize = true;
+            this.procexedump.BackColor = System.Drawing.Color.Transparent;
+            this.procexedump.Enabled = false;
+            this.procexedump.ForeColor = System.Drawing.Color.Silver;
+            this.procexedump.Location = new System.Drawing.Point(948, 116);
+            this.procexedump.Name = "procexedump";
+            this.procexedump.Size = new System.Drawing.Size(115, 21);
+            this.procexedump.TabIndex = 85;
+            this.procexedump.Tag = "procexedump,PID,DIR";
+            this.procexedump.Text = "procexedump";
+            this.procexedump.UseVisualStyleBackColor = false;
+            // 
+            // mutantscan
+            // 
+            this.mutantscan.AutoSize = true;
+            this.mutantscan.BackColor = System.Drawing.Color.Transparent;
+            this.mutantscan.Enabled = false;
+            this.mutantscan.ForeColor = System.Drawing.Color.Silver;
+            this.mutantscan.Location = new System.Drawing.Point(948, 89);
+            this.mutantscan.Name = "mutantscan";
+            this.mutantscan.Size = new System.Drawing.Size(103, 21);
+            this.mutantscan.TabIndex = 84;
+            this.mutantscan.Tag = "mutantscan";
+            this.mutantscan.Text = "mutantscan";
+            this.mutantscan.UseVisualStyleBackColor = false;
+            // 
+            // modules
+            // 
+            this.modules.AutoSize = true;
+            this.modules.BackColor = System.Drawing.Color.Transparent;
+            this.modules.Enabled = false;
+            this.modules.ForeColor = System.Drawing.Color.Silver;
+            this.modules.Location = new System.Drawing.Point(948, 64);
+            this.modules.Name = "modules";
+            this.modules.Size = new System.Drawing.Size(83, 21);
+            this.modules.TabIndex = 83;
+            this.modules.Tag = "modules";
+            this.modules.Text = "modules";
+            this.modules.UseVisualStyleBackColor = false;
+            // 
+            // mftparser
+            // 
+            this.mftparser.AutoSize = true;
+            this.mftparser.BackColor = System.Drawing.Color.Transparent;
+            this.mftparser.Enabled = false;
+            this.mftparser.ForeColor = System.Drawing.Color.Silver;
+            this.mftparser.Location = new System.Drawing.Point(948, 35);
+            this.mftparser.Name = "mftparser";
+            this.mftparser.Size = new System.Drawing.Size(90, 21);
+            this.mftparser.TabIndex = 82;
+            this.mftparser.Tag = "mfparser";
+            this.mftparser.Text = "mftparser";
+            this.mftparser.UseVisualStyleBackColor = false;
             // 
             // MainWindow
             // 
@@ -893,7 +1313,35 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::volatility_GUI.Properties.Resources.VPMbackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1037, 476);
+            this.ClientSize = new System.Drawing.Size(1117, 478);
+            this.Controls.Add(this.userhandles);
+            this.Controls.Add(this.unloadedmodules);
+            this.Controls.Add(this.timers);
+            this.Controls.Add(this.timeliner);
+            this.Controls.Add(this.thrdscan);
+            this.Controls.Add(this.symlinkscan);
+            this.Controls.Add(this.ssdt);
+            this.Controls.Add(this.checkbox);
+            this.Controls.Add(this.psxview);
+            this.Controls.Add(this.procmemdump);
+            this.Controls.Add(this.procexedump);
+            this.Controls.Add(this.mutantscan);
+            this.Controls.Add(this.modules);
+            this.Controls.Add(this.mftparser);
+            this.Controls.Add(this.messagehooks);
+            this.Controls.Add(this.mbrparser);
+            this.Controls.Add(this.ldrmodules);
+            this.Controls.Add(this.kpcrscan);
+            this.Controls.Add(this.kdbgscan);
+            this.Controls.Add(this.idt);
+            this.Controls.Add(this.hivescan);
+            this.Controls.Add(this.hibinfo);
+            this.Controls.Add(this.hivelist);
+            this.Controls.Add(this.getservicesids);
+            this.Controls.Add(this.gdt);
+            this.Controls.Add(this.gditimers);
+            this.Controls.Add(this.gahti);
+            this.Controls.Add(this.filescan);
             this.Controls.Add(this.eventhooks);
             this.Controls.Add(this.dlldump);
             this.Controls.Add(this.driverirp);
@@ -1031,6 +1479,34 @@
         private System.Windows.Forms.CheckBox driverirp;
         private System.Windows.Forms.CheckBox dlldump;
         private System.Windows.Forms.CheckBox eventhooks;
+        private System.Windows.Forms.CheckBox filescan;
+        private System.Windows.Forms.CheckBox gahti;
+        private System.Windows.Forms.CheckBox gditimers;
+        private System.Windows.Forms.CheckBox gdt;
+        private System.Windows.Forms.CheckBox getservicesids;
+        private System.Windows.Forms.CheckBox hivelist;
+        private System.Windows.Forms.CheckBox hibinfo;
+        private System.Windows.Forms.CheckBox hivescan;
+        private System.Windows.Forms.CheckBox idt;
+        private System.Windows.Forms.CheckBox kdbgscan;
+        private System.Windows.Forms.CheckBox kpcrscan;
+        private System.Windows.Forms.CheckBox ldrmodules;
+        private System.Windows.Forms.CheckBox mbrparser;
+        private System.Windows.Forms.CheckBox messagehooks;
+        private System.Windows.Forms.CheckBox userhandles;
+        private System.Windows.Forms.CheckBox unloadedmodules;
+        private System.Windows.Forms.CheckBox timers;
+        private System.Windows.Forms.CheckBox timeliner;
+        private System.Windows.Forms.CheckBox thrdscan;
+        private System.Windows.Forms.CheckBox symlinkscan;
+        private System.Windows.Forms.CheckBox ssdt;
+        private System.Windows.Forms.CheckBox checkbox;
+        private System.Windows.Forms.CheckBox psxview;
+        private System.Windows.Forms.CheckBox procmemdump;
+        private System.Windows.Forms.CheckBox procexedump;
+        private System.Windows.Forms.CheckBox mutantscan;
+        private System.Windows.Forms.CheckBox modules;
+        private System.Windows.Forms.CheckBox mftparser;
     }
 }
 

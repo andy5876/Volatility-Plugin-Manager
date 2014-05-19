@@ -64,3 +64,17 @@ D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1 - Copy\Vo
 D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1 - Copy\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\volatility GUI.csproj.GenerateResource.Cache
 D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1 - Copy\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.exe.manifest
 D:\Documents\Visual Studio 2013\Projects\Volatility-Plugin-Manager-1.1 - Copy\Volatility-Plugin-Manager-1.1\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.application
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.exe.config
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\volatility GUI.csproj.ResolveComReference.cache
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.exe
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.pdb
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.exe.manifest
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.application
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.exe
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\bin\Release\Volatility Plugin Manager 1.1.pdb
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\volatility GUI.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\volatility_GUI.MainWindow.resources
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\volatility_GUI.Properties.Resources.resources
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\volatility GUI.csproj.GenerateResource.Cache
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.exe.manifest
+D:\Documents\GitHub\Volatility-Plugin-Manager\volatility GUI\obj\Release\Volatility Plugin Manager 1.1.application
