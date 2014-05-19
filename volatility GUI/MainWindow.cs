@@ -84,7 +84,7 @@ namespace volatility_GUI
             tooltip1.InitialDelay = 500;
             tooltip1.ReshowDelay = 500;
             tooltip1.ShowAlways = true;
-            tooltip1.SetToolTip(this.pidbox, "allows you to run a plugin against a specific set of pids works for dlllist, vadinfo, vaddump, memdump, handles, privs, getsids, envars, malfind and threads (seperate pids by comma)");
+            tooltip1.SetToolTip(this.pidbox, "allows you to run a plugin against a specific set of pids (seperate pids by comma)");
 
             ToolTip tooltip2 = new ToolTip();
             tooltip2.AutoPopDelay = 30000;
