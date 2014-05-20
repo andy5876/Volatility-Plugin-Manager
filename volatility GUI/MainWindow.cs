@@ -218,6 +218,8 @@ namespace volatility_GUI
             
             process.WaitForExit();
             process.Close();
+
+            
             if (tags.Contains("PID") && pidbox.Text !="")
             {
                 var tempfile = Path.GetTempFileName();
@@ -254,9 +256,7 @@ namespace volatility_GUI
                 File.Copy(tempfile, output + @"\" + PluginName + @".txt", true);
                 File.Delete(tempfile);
             }
-            
-            
-                
+
             
             
         }

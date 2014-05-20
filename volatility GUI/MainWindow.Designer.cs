@@ -81,7 +81,6 @@
             this.atomscan = new System.Windows.Forms.CheckBox();
             this.devicetree = new System.Windows.Forms.CheckBox();
             this.deskscan = new System.Windows.Forms.CheckBox();
-            this.crashinfo = new System.Windows.Forms.CheckBox();
             this.consoles = new System.Windows.Forms.CheckBox();
             this.callbacks = new System.Windows.Forms.CheckBox();
             this.bioskbd = new System.Windows.Forms.CheckBox();
@@ -97,7 +96,6 @@
             this.gdt = new System.Windows.Forms.CheckBox();
             this.getservicesids = new System.Windows.Forms.CheckBox();
             this.hivelist = new System.Windows.Forms.CheckBox();
-            this.hibinfo = new System.Windows.Forms.CheckBox();
             this.hivescan = new System.Windows.Forms.CheckBox();
             this.idt = new System.Windows.Forms.CheckBox();
             this.kdbgscan = new System.Windows.Forms.CheckBox();
@@ -208,7 +206,7 @@
             this.psscan.BackColor = System.Drawing.Color.Transparent;
             this.psscan.Enabled = false;
             this.psscan.ForeColor = System.Drawing.Color.Silver;
-            this.psscan.Location = new System.Drawing.Point(728, 221);
+            this.psscan.Location = new System.Drawing.Point(728, 172);
             this.psscan.Name = "psscan";
             this.psscan.Size = new System.Drawing.Size(75, 21);
             this.psscan.TabIndex = 5;
@@ -222,7 +220,7 @@
             this.pslist.BackColor = System.Drawing.Color.Transparent;
             this.pslist.Enabled = false;
             this.pslist.ForeColor = System.Drawing.Color.Silver;
-            this.pslist.Location = new System.Drawing.Point(728, 196);
+            this.pslist.Location = new System.Drawing.Point(728, 148);
             this.pslist.Name = "pslist";
             this.pslist.Size = new System.Drawing.Size(62, 21);
             this.pslist.TabIndex = 6;
@@ -236,7 +234,7 @@
             this.pstree.BackColor = System.Drawing.Color.Transparent;
             this.pstree.Enabled = false;
             this.pstree.ForeColor = System.Drawing.Color.Silver;
-            this.pstree.Location = new System.Drawing.Point(728, 248);
+            this.pstree.Location = new System.Drawing.Point(728, 199);
             this.pstree.Name = "pstree";
             this.pstree.Size = new System.Drawing.Size(70, 21);
             this.pstree.TabIndex = 7;
@@ -250,7 +248,7 @@
             this.dlllist.BackColor = System.Drawing.Color.Transparent;
             this.dlllist.Enabled = false;
             this.dlllist.ForeColor = System.Drawing.Color.Silver;
-            this.dlllist.Location = new System.Drawing.Point(365, 379);
+            this.dlllist.Location = new System.Drawing.Point(365, 354);
             this.dlllist.Name = "dlllist";
             this.dlllist.Size = new System.Drawing.Size(61, 21);
             this.dlllist.TabIndex = 8;
@@ -278,7 +276,7 @@
             this.sockscan.BackColor = System.Drawing.Color.Transparent;
             this.sockscan.Enabled = false;
             this.sockscan.ForeColor = System.Drawing.Color.Silver;
-            this.sockscan.Location = new System.Drawing.Point(728, 299);
+            this.sockscan.Location = new System.Drawing.Point(728, 253);
             this.sockscan.Name = "sockscan";
             this.sockscan.Size = new System.Drawing.Size(89, 21);
             this.sockscan.TabIndex = 10;
@@ -307,7 +305,7 @@
             this.netscan.BackColor = System.Drawing.Color.Transparent;
             this.netscan.Enabled = false;
             this.netscan.ForeColor = System.Drawing.Color.Silver;
-            this.netscan.Location = new System.Drawing.Point(728, 92);
+            this.netscan.Location = new System.Drawing.Point(728, 38);
             this.netscan.Name = "netscan";
             this.netscan.Size = new System.Drawing.Size(80, 21);
             this.netscan.TabIndex = 12;
@@ -321,7 +319,7 @@
             this.modscan.BackColor = System.Drawing.Color.Transparent;
             this.modscan.Enabled = false;
             this.modscan.ForeColor = System.Drawing.Color.Silver;
-            this.modscan.Location = new System.Drawing.Point(598, 380);
+            this.modscan.Location = new System.Drawing.Point(598, 331);
             this.modscan.Name = "modscan";
             this.modscan.Size = new System.Drawing.Size(87, 21);
             this.modscan.TabIndex = 13;
@@ -349,7 +347,7 @@
             this.svcscan.BackColor = System.Drawing.Color.Transparent;
             this.svcscan.Enabled = false;
             this.svcscan.ForeColor = System.Drawing.Color.Silver;
-            this.svcscan.Location = new System.Drawing.Point(860, 92);
+            this.svcscan.Location = new System.Drawing.Point(860, 39);
             this.svcscan.Name = "svcscan";
             this.svcscan.Size = new System.Drawing.Size(81, 21);
             this.svcscan.TabIndex = 15;
@@ -363,7 +361,7 @@
             this.getsids.BackColor = System.Drawing.Color.Transparent;
             this.getsids.Enabled = false;
             this.getsids.ForeColor = System.Drawing.Color.Silver;
-            this.getsids.Location = new System.Drawing.Point(478, 355);
+            this.getsids.Location = new System.Drawing.Point(477, 331);
             this.getsids.Name = "getsids";
             this.getsids.Size = new System.Drawing.Size(75, 21);
             this.getsids.TabIndex = 16;
@@ -445,7 +443,7 @@
             this.screenshot.BackColor = System.Drawing.Color.Transparent;
             this.screenshot.Enabled = false;
             this.screenshot.ForeColor = System.Drawing.Color.Silver;
-            this.screenshot.Location = new System.Drawing.Point(728, 327);
+            this.screenshot.Location = new System.Drawing.Point(728, 277);
             this.screenshot.Name = "screenshot";
             this.screenshot.Size = new System.Drawing.Size(100, 21);
             this.screenshot.TabIndex = 30;
@@ -459,7 +457,7 @@
             this.userassist.BackColor = System.Drawing.Color.Transparent;
             this.userassist.Enabled = false;
             this.userassist.ForeColor = System.Drawing.Color.Silver;
-            this.userassist.Location = new System.Drawing.Point(860, 275);
+            this.userassist.Location = new System.Drawing.Point(860, 226);
             this.userassist.Name = "userassist";
             this.userassist.Size = new System.Drawing.Size(94, 21);
             this.userassist.TabIndex = 31;
@@ -473,7 +471,7 @@
             this.shellbags.BackColor = System.Drawing.Color.Transparent;
             this.shellbags.Enabled = false;
             this.shellbags.ForeColor = System.Drawing.Color.Silver;
-            this.shellbags.Location = new System.Drawing.Point(728, 379);
+            this.shellbags.Location = new System.Drawing.Point(728, 331);
             this.shellbags.Name = "shellbags";
             this.shellbags.Size = new System.Drawing.Size(90, 21);
             this.shellbags.TabIndex = 32;
@@ -487,7 +485,7 @@
             this.shimcache.BackColor = System.Drawing.Color.Transparent;
             this.shimcache.Enabled = false;
             this.shimcache.ForeColor = System.Drawing.Color.Silver;
-            this.shimcache.Location = new System.Drawing.Point(860, 32);
+            this.shimcache.Location = new System.Drawing.Point(728, 356);
             this.shimcache.Name = "shimcache";
             this.shimcache.Size = new System.Drawing.Size(97, 21);
             this.shimcache.TabIndex = 33;
@@ -508,7 +506,7 @@
             this.sessions.BackColor = System.Drawing.Color.Transparent;
             this.sessions.Enabled = false;
             this.sessions.ForeColor = System.Drawing.Color.Silver;
-            this.sessions.Location = new System.Drawing.Point(728, 352);
+            this.sessions.Location = new System.Drawing.Point(728, 304);
             this.sessions.Name = "sessions";
             this.sessions.Size = new System.Drawing.Size(85, 21);
             this.sessions.TabIndex = 34;
@@ -522,7 +520,7 @@
             this.vadinfo.BackColor = System.Drawing.Color.Transparent;
             this.vadinfo.Enabled = false;
             this.vadinfo.ForeColor = System.Drawing.Color.Silver;
-            this.vadinfo.Location = new System.Drawing.Point(860, 351);
+            this.vadinfo.Location = new System.Drawing.Point(860, 304);
             this.vadinfo.Name = "vadinfo";
             this.vadinfo.Size = new System.Drawing.Size(76, 21);
             this.vadinfo.TabIndex = 35;
@@ -536,7 +534,7 @@
             this.vaddump.BackColor = System.Drawing.Color.Transparent;
             this.vaddump.Enabled = false;
             this.vaddump.ForeColor = System.Drawing.Color.Silver;
-            this.vaddump.Location = new System.Drawing.Point(860, 327);
+            this.vaddump.Location = new System.Drawing.Point(860, 277);
             this.vaddump.Name = "vaddump";
             this.vaddump.Size = new System.Drawing.Size(88, 21);
             this.vaddump.TabIndex = 36;
@@ -550,7 +548,7 @@
             this.memdump.BackColor = System.Drawing.Color.Transparent;
             this.memdump.Enabled = false;
             this.memdump.ForeColor = System.Drawing.Color.Silver;
-            this.memdump.Location = new System.Drawing.Point(598, 303);
+            this.memdump.Location = new System.Drawing.Point(598, 253);
             this.memdump.Name = "memdump";
             this.memdump.Size = new System.Drawing.Size(95, 21);
             this.memdump.TabIndex = 37;
@@ -565,7 +563,7 @@
             this.handles.BackColor = System.Drawing.Color.Transparent;
             this.handles.Enabled = false;
             this.handles.ForeColor = System.Drawing.Color.Silver;
-            this.handles.Location = new System.Drawing.Point(478, 380);
+            this.handles.Location = new System.Drawing.Point(477, 356);
             this.handles.Name = "handles";
             this.handles.Size = new System.Drawing.Size(80, 21);
             this.handles.TabIndex = 38;
@@ -579,7 +577,7 @@
             this.privs.BackColor = System.Drawing.Color.Transparent;
             this.privs.Enabled = false;
             this.privs.ForeColor = System.Drawing.Color.Silver;
-            this.privs.Location = new System.Drawing.Point(728, 118);
+            this.privs.Location = new System.Drawing.Point(728, 65);
             this.privs.Name = "privs";
             this.privs.Size = new System.Drawing.Size(60, 21);
             this.privs.TabIndex = 39;
@@ -613,7 +611,7 @@
             this.threads.BackColor = System.Drawing.Color.Transparent;
             this.threads.Enabled = false;
             this.threads.ForeColor = System.Drawing.Color.Silver;
-            this.threads.Location = new System.Drawing.Point(860, 168);
+            this.threads.Location = new System.Drawing.Point(860, 121);
             this.threads.Name = "threads";
             this.threads.Size = new System.Drawing.Size(78, 21);
             this.threads.TabIndex = 42;
@@ -627,7 +625,7 @@
             this.envars.BackColor = System.Drawing.Color.Transparent;
             this.envars.Enabled = false;
             this.envars.ForeColor = System.Drawing.Color.Silver;
-            this.envars.Location = new System.Drawing.Point(478, 145);
+            this.envars.Location = new System.Drawing.Point(477, 121);
             this.envars.Name = "envars";
             this.envars.Size = new System.Drawing.Size(73, 21);
             this.envars.TabIndex = 43;
@@ -641,7 +639,7 @@
             this.iehistory.BackColor = System.Drawing.Color.Transparent;
             this.iehistory.Enabled = false;
             this.iehistory.ForeColor = System.Drawing.Color.Silver;
-            this.iehistory.Location = new System.Drawing.Point(598, 148);
+            this.iehistory.Location = new System.Drawing.Point(598, 94);
             this.iehistory.Name = "iehistory";
             this.iehistory.Size = new System.Drawing.Size(83, 21);
             this.iehistory.TabIndex = 44;
@@ -655,7 +653,7 @@
             this.malfind.BackColor = System.Drawing.Color.Transparent;
             this.malfind.Enabled = false;
             this.malfind.ForeColor = System.Drawing.Color.Silver;
-            this.malfind.Location = new System.Drawing.Point(597, 250);
+            this.malfind.Location = new System.Drawing.Point(598, 199);
             this.malfind.Name = "malfind";
             this.malfind.Size = new System.Drawing.Size(75, 21);
             this.malfind.TabIndex = 45;
@@ -669,7 +667,7 @@
             this.evtlogs.BackColor = System.Drawing.Color.Transparent;
             this.evtlogs.Enabled = false;
             this.evtlogs.ForeColor = System.Drawing.Color.Silver;
-            this.evtlogs.Location = new System.Drawing.Point(478, 196);
+            this.evtlogs.Location = new System.Drawing.Point(477, 172);
             this.evtlogs.Name = "evtlogs";
             this.evtlogs.Size = new System.Drawing.Size(75, 21);
             this.evtlogs.TabIndex = 46;
@@ -692,7 +690,7 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.SystemColors.ControlText;
-            this.progressBar1.Location = new System.Drawing.Point(36, 172);
+            this.progressBar1.Location = new System.Drawing.Point(12, 178);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(199, 11);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -702,7 +700,7 @@
             // 
             this.progresslabel.AutoSize = true;
             this.progresslabel.BackColor = System.Drawing.Color.Transparent;
-            this.progresslabel.Location = new System.Drawing.Point(252, 172);
+            this.progresslabel.Location = new System.Drawing.Point(217, 175);
             this.progresslabel.Name = "progresslabel";
             this.progresslabel.Size = new System.Drawing.Size(0, 17);
             this.progresslabel.TabIndex = 50;
@@ -753,7 +751,7 @@
             this.devicetree.BackColor = System.Drawing.Color.Transparent;
             this.devicetree.Enabled = false;
             this.devicetree.ForeColor = System.Drawing.Color.Silver;
-            this.devicetree.Location = new System.Drawing.Point(365, 329);
+            this.devicetree.Location = new System.Drawing.Point(365, 304);
             this.devicetree.Name = "devicetree";
             this.devicetree.Size = new System.Drawing.Size(96, 21);
             this.devicetree.TabIndex = 56;
@@ -767,27 +765,13 @@
             this.deskscan.BackColor = System.Drawing.Color.Transparent;
             this.deskscan.Enabled = false;
             this.deskscan.ForeColor = System.Drawing.Color.Silver;
-            this.deskscan.Location = new System.Drawing.Point(365, 302);
+            this.deskscan.Location = new System.Drawing.Point(365, 277);
             this.deskscan.Name = "deskscan";
             this.deskscan.Size = new System.Drawing.Size(90, 21);
             this.deskscan.TabIndex = 57;
             this.deskscan.Tag = "deskscan";
             this.deskscan.Text = "deskscan";
             this.deskscan.UseVisualStyleBackColor = false;
-            // 
-            // crashinfo
-            // 
-            this.crashinfo.AutoSize = true;
-            this.crashinfo.BackColor = System.Drawing.Color.Transparent;
-            this.crashinfo.Enabled = false;
-            this.crashinfo.ForeColor = System.Drawing.Color.Silver;
-            this.crashinfo.Location = new System.Drawing.Point(366, 276);
-            this.crashinfo.Name = "crashinfo";
-            this.crashinfo.Size = new System.Drawing.Size(88, 21);
-            this.crashinfo.TabIndex = 58;
-            this.crashinfo.Tag = "crashinfo";
-            this.crashinfo.Text = "crashinfo";
-            this.crashinfo.UseVisualStyleBackColor = false;
             // 
             // consoles
             // 
@@ -837,7 +821,7 @@
             this.dumpfiles.BackColor = System.Drawing.Color.Transparent;
             this.dumpfiles.Enabled = false;
             this.dumpfiles.ForeColor = System.Drawing.Color.Silver;
-            this.dumpfiles.Location = new System.Drawing.Point(478, 118);
+            this.dumpfiles.Location = new System.Drawing.Point(477, 94);
             this.dumpfiles.Name = "dumpfiles";
             this.dumpfiles.Size = new System.Drawing.Size(90, 21);
             this.dumpfiles.TabIndex = 62;
@@ -851,7 +835,7 @@
             this.dumpcerts.BackColor = System.Drawing.Color.Transparent;
             this.dumpcerts.Enabled = false;
             this.dumpcerts.ForeColor = System.Drawing.Color.Silver;
-            this.dumpcerts.Location = new System.Drawing.Point(478, 92);
+            this.dumpcerts.Location = new System.Drawing.Point(477, 68);
             this.dumpcerts.Name = "dumpcerts";
             this.dumpcerts.Size = new System.Drawing.Size(96, 21);
             this.dumpcerts.TabIndex = 63;
@@ -865,7 +849,7 @@
             this.driverscan.BackColor = System.Drawing.Color.Transparent;
             this.driverscan.Enabled = false;
             this.driverscan.ForeColor = System.Drawing.Color.Silver;
-            this.driverscan.Location = new System.Drawing.Point(478, 62);
+            this.driverscan.Location = new System.Drawing.Point(477, 38);
             this.driverscan.Name = "driverscan";
             this.driverscan.Size = new System.Drawing.Size(96, 21);
             this.driverscan.TabIndex = 64;
@@ -879,7 +863,7 @@
             this.driverirp.BackColor = System.Drawing.Color.Transparent;
             this.driverirp.Enabled = false;
             this.driverirp.ForeColor = System.Drawing.Color.Silver;
-            this.driverirp.Location = new System.Drawing.Point(478, 36);
+            this.driverirp.Location = new System.Drawing.Point(366, 378);
             this.driverirp.Name = "driverirp";
             this.driverirp.Size = new System.Drawing.Size(82, 21);
             this.driverirp.TabIndex = 65;
@@ -893,7 +877,7 @@
             this.dlldump.BackColor = System.Drawing.Color.Transparent;
             this.dlldump.Enabled = false;
             this.dlldump.ForeColor = System.Drawing.Color.Silver;
-            this.dlldump.Location = new System.Drawing.Point(365, 354);
+            this.dlldump.Location = new System.Drawing.Point(365, 329);
             this.dlldump.Name = "dlldump";
             this.dlldump.Size = new System.Drawing.Size(79, 21);
             this.dlldump.TabIndex = 66;
@@ -907,7 +891,7 @@
             this.eventhooks.BackColor = System.Drawing.Color.Transparent;
             this.eventhooks.Enabled = false;
             this.eventhooks.ForeColor = System.Drawing.Color.Silver;
-            this.eventhooks.Location = new System.Drawing.Point(478, 172);
+            this.eventhooks.Location = new System.Drawing.Point(477, 148);
             this.eventhooks.Name = "eventhooks";
             this.eventhooks.Size = new System.Drawing.Size(103, 21);
             this.eventhooks.TabIndex = 67;
@@ -921,7 +905,7 @@
             this.filescan.BackColor = System.Drawing.Color.Transparent;
             this.filescan.Enabled = false;
             this.filescan.ForeColor = System.Drawing.Color.Silver;
-            this.filescan.Location = new System.Drawing.Point(478, 223);
+            this.filescan.Location = new System.Drawing.Point(477, 199);
             this.filescan.Name = "filescan";
             this.filescan.Size = new System.Drawing.Size(78, 21);
             this.filescan.TabIndex = 68;
@@ -935,7 +919,7 @@
             this.gahti.BackColor = System.Drawing.Color.Transparent;
             this.gahti.Enabled = false;
             this.gahti.ForeColor = System.Drawing.Color.Silver;
-            this.gahti.Location = new System.Drawing.Point(478, 250);
+            this.gahti.Location = new System.Drawing.Point(477, 226);
             this.gahti.Name = "gahti";
             this.gahti.Size = new System.Drawing.Size(61, 21);
             this.gahti.TabIndex = 69;
@@ -949,7 +933,7 @@
             this.gditimers.BackColor = System.Drawing.Color.Transparent;
             this.gditimers.Enabled = false;
             this.gditimers.ForeColor = System.Drawing.Color.Silver;
-            this.gditimers.Location = new System.Drawing.Point(478, 277);
+            this.gditimers.Location = new System.Drawing.Point(477, 253);
             this.gditimers.Name = "gditimers";
             this.gditimers.Size = new System.Drawing.Size(87, 21);
             this.gditimers.TabIndex = 70;
@@ -963,7 +947,7 @@
             this.gdt.BackColor = System.Drawing.Color.Transparent;
             this.gdt.Enabled = false;
             this.gdt.ForeColor = System.Drawing.Color.Silver;
-            this.gdt.Location = new System.Drawing.Point(478, 303);
+            this.gdt.Location = new System.Drawing.Point(477, 279);
             this.gdt.Name = "gdt";
             this.gdt.Size = new System.Drawing.Size(50, 21);
             this.gdt.TabIndex = 71;
@@ -977,7 +961,7 @@
             this.getservicesids.BackColor = System.Drawing.Color.Transparent;
             this.getservicesids.Enabled = false;
             this.getservicesids.ForeColor = System.Drawing.Color.Silver;
-            this.getservicesids.Location = new System.Drawing.Point(478, 330);
+            this.getservicesids.Location = new System.Drawing.Point(477, 306);
             this.getservicesids.Name = "getservicesids";
             this.getservicesids.Size = new System.Drawing.Size(120, 21);
             this.getservicesids.TabIndex = 72;
@@ -991,7 +975,7 @@
             this.hivelist.BackColor = System.Drawing.Color.Transparent;
             this.hivelist.Enabled = false;
             this.hivelist.ForeColor = System.Drawing.Color.Silver;
-            this.hivelist.Location = new System.Drawing.Point(598, 66);
+            this.hivelist.Location = new System.Drawing.Point(477, 380);
             this.hivelist.Name = "hivelist";
             this.hivelist.Size = new System.Drawing.Size(73, 21);
             this.hivelist.TabIndex = 73;
@@ -999,27 +983,13 @@
             this.hivelist.Text = "hivelist";
             this.hivelist.UseVisualStyleBackColor = false;
             // 
-            // hibinfo
-            // 
-            this.hibinfo.AutoSize = true;
-            this.hibinfo.BackColor = System.Drawing.Color.Transparent;
-            this.hibinfo.Enabled = false;
-            this.hibinfo.ForeColor = System.Drawing.Color.Silver;
-            this.hibinfo.Location = new System.Drawing.Point(598, 35);
-            this.hibinfo.Name = "hibinfo";
-            this.hibinfo.Size = new System.Drawing.Size(72, 21);
-            this.hibinfo.TabIndex = 74;
-            this.hibinfo.Tag = "hibinfo";
-            this.hibinfo.Text = "hibinfo";
-            this.hibinfo.UseVisualStyleBackColor = false;
-            // 
             // hivescan
             // 
             this.hivescan.AutoSize = true;
             this.hivescan.BackColor = System.Drawing.Color.Transparent;
             this.hivescan.Enabled = false;
             this.hivescan.ForeColor = System.Drawing.Color.Silver;
-            this.hivescan.Location = new System.Drawing.Point(598, 95);
+            this.hivescan.Location = new System.Drawing.Point(598, 38);
             this.hivescan.Name = "hivescan";
             this.hivescan.Size = new System.Drawing.Size(86, 21);
             this.hivescan.TabIndex = 75;
@@ -1033,7 +1003,7 @@
             this.idt.BackColor = System.Drawing.Color.Transparent;
             this.idt.Enabled = false;
             this.idt.ForeColor = System.Drawing.Color.Silver;
-            this.idt.Location = new System.Drawing.Point(598, 121);
+            this.idt.Location = new System.Drawing.Point(598, 66);
             this.idt.Name = "idt";
             this.idt.Size = new System.Drawing.Size(45, 21);
             this.idt.TabIndex = 76;
@@ -1047,7 +1017,7 @@
             this.kdbgscan.BackColor = System.Drawing.Color.Transparent;
             this.kdbgscan.Enabled = false;
             this.kdbgscan.ForeColor = System.Drawing.Color.Silver;
-            this.kdbgscan.Location = new System.Drawing.Point(598, 172);
+            this.kdbgscan.Location = new System.Drawing.Point(598, 121);
             this.kdbgscan.Name = "kdbgscan";
             this.kdbgscan.Size = new System.Drawing.Size(91, 21);
             this.kdbgscan.TabIndex = 77;
@@ -1061,7 +1031,7 @@
             this.kpcrscan.BackColor = System.Drawing.Color.Transparent;
             this.kpcrscan.Enabled = false;
             this.kpcrscan.ForeColor = System.Drawing.Color.Silver;
-            this.kpcrscan.Location = new System.Drawing.Point(597, 199);
+            this.kpcrscan.Location = new System.Drawing.Point(598, 148);
             this.kpcrscan.Name = "kpcrscan";
             this.kpcrscan.Size = new System.Drawing.Size(87, 21);
             this.kpcrscan.TabIndex = 78;
@@ -1075,7 +1045,7 @@
             this.ldrmodules.BackColor = System.Drawing.Color.Transparent;
             this.ldrmodules.Enabled = false;
             this.ldrmodules.ForeColor = System.Drawing.Color.Silver;
-            this.ldrmodules.Location = new System.Drawing.Point(598, 222);
+            this.ldrmodules.Location = new System.Drawing.Point(598, 172);
             this.ldrmodules.Name = "ldrmodules";
             this.ldrmodules.Size = new System.Drawing.Size(99, 21);
             this.ldrmodules.TabIndex = 79;
@@ -1089,7 +1059,7 @@
             this.mbrparser.BackColor = System.Drawing.Color.Transparent;
             this.mbrparser.Enabled = false;
             this.mbrparser.ForeColor = System.Drawing.Color.Silver;
-            this.mbrparser.Location = new System.Drawing.Point(598, 276);
+            this.mbrparser.Location = new System.Drawing.Point(598, 226);
             this.mbrparser.Name = "mbrparser";
             this.mbrparser.Size = new System.Drawing.Size(95, 21);
             this.mbrparser.TabIndex = 80;
@@ -1103,7 +1073,7 @@
             this.messagehooks.BackColor = System.Drawing.Color.Transparent;
             this.messagehooks.Enabled = false;
             this.messagehooks.ForeColor = System.Drawing.Color.Silver;
-            this.messagehooks.Location = new System.Drawing.Point(598, 330);
+            this.messagehooks.Location = new System.Drawing.Point(598, 279);
             this.messagehooks.Name = "messagehooks";
             this.messagehooks.Size = new System.Drawing.Size(125, 21);
             this.messagehooks.TabIndex = 81;
@@ -1117,7 +1087,7 @@
             this.userhandles.BackColor = System.Drawing.Color.Transparent;
             this.userhandles.Enabled = false;
             this.userhandles.ForeColor = System.Drawing.Color.Silver;
-            this.userhandles.Location = new System.Drawing.Point(860, 300);
+            this.userhandles.Location = new System.Drawing.Point(860, 253);
             this.userhandles.Name = "userhandles";
             this.userhandles.Size = new System.Drawing.Size(108, 21);
             this.userhandles.TabIndex = 95;
@@ -1131,7 +1101,7 @@
             this.unloadedmodules.BackColor = System.Drawing.Color.Transparent;
             this.unloadedmodules.Enabled = false;
             this.unloadedmodules.ForeColor = System.Drawing.Color.Silver;
-            this.unloadedmodules.Location = new System.Drawing.Point(860, 248);
+            this.unloadedmodules.Location = new System.Drawing.Point(860, 199);
             this.unloadedmodules.Name = "unloadedmodules";
             this.unloadedmodules.Size = new System.Drawing.Size(142, 21);
             this.unloadedmodules.TabIndex = 94;
@@ -1145,7 +1115,7 @@
             this.timers.BackColor = System.Drawing.Color.Transparent;
             this.timers.Enabled = false;
             this.timers.ForeColor = System.Drawing.Color.Silver;
-            this.timers.Location = new System.Drawing.Point(860, 219);
+            this.timers.Location = new System.Drawing.Point(860, 172);
             this.timers.Name = "timers";
             this.timers.Size = new System.Drawing.Size(68, 21);
             this.timers.TabIndex = 93;
@@ -1159,7 +1129,7 @@
             this.timeliner.BackColor = System.Drawing.Color.Transparent;
             this.timeliner.Enabled = false;
             this.timeliner.ForeColor = System.Drawing.Color.Silver;
-            this.timeliner.Location = new System.Drawing.Point(860, 193);
+            this.timeliner.Location = new System.Drawing.Point(860, 148);
             this.timeliner.Name = "timeliner";
             this.timeliner.Size = new System.Drawing.Size(83, 21);
             this.timeliner.TabIndex = 92;
@@ -1173,7 +1143,7 @@
             this.thrdscan.BackColor = System.Drawing.Color.Transparent;
             this.thrdscan.Enabled = false;
             this.thrdscan.ForeColor = System.Drawing.Color.Silver;
-            this.thrdscan.Location = new System.Drawing.Point(860, 142);
+            this.thrdscan.Location = new System.Drawing.Point(860, 89);
             this.thrdscan.Name = "thrdscan";
             this.thrdscan.Size = new System.Drawing.Size(85, 21);
             this.thrdscan.TabIndex = 91;
@@ -1187,7 +1157,7 @@
             this.symlinkscan.BackColor = System.Drawing.Color.Transparent;
             this.symlinkscan.Enabled = false;
             this.symlinkscan.ForeColor = System.Drawing.Color.Silver;
-            this.symlinkscan.Location = new System.Drawing.Point(860, 118);
+            this.symlinkscan.Location = new System.Drawing.Point(860, 65);
             this.symlinkscan.Name = "symlinkscan";
             this.symlinkscan.Size = new System.Drawing.Size(106, 21);
             this.symlinkscan.TabIndex = 90;
@@ -1201,7 +1171,7 @@
             this.ssdt.BackColor = System.Drawing.Color.Transparent;
             this.ssdt.Enabled = false;
             this.ssdt.ForeColor = System.Drawing.Color.Silver;
-            this.ssdt.Location = new System.Drawing.Point(860, 63);
+            this.ssdt.Location = new System.Drawing.Point(728, 380);
             this.ssdt.Name = "ssdt";
             this.ssdt.Size = new System.Drawing.Size(56, 21);
             this.ssdt.TabIndex = 89;
@@ -1215,7 +1185,7 @@
             this.vadtree.BackColor = System.Drawing.Color.Transparent;
             this.vadtree.Enabled = false;
             this.vadtree.ForeColor = System.Drawing.Color.Silver;
-            this.vadtree.Location = new System.Drawing.Point(860, 378);
+            this.vadtree.Location = new System.Drawing.Point(860, 331);
             this.vadtree.Name = "vadtree";
             this.vadtree.Size = new System.Drawing.Size(78, 21);
             this.vadtree.TabIndex = 88;
@@ -1229,7 +1199,7 @@
             this.psxview.BackColor = System.Drawing.Color.Transparent;
             this.psxview.Enabled = false;
             this.psxview.ForeColor = System.Drawing.Color.Silver;
-            this.psxview.Location = new System.Drawing.Point(728, 275);
+            this.psxview.Location = new System.Drawing.Point(728, 226);
             this.psxview.Name = "psxview";
             this.psxview.Size = new System.Drawing.Size(78, 21);
             this.psxview.TabIndex = 87;
@@ -1243,7 +1213,7 @@
             this.procmemdump.BackColor = System.Drawing.Color.Transparent;
             this.procmemdump.Enabled = false;
             this.procmemdump.ForeColor = System.Drawing.Color.Silver;
-            this.procmemdump.Location = new System.Drawing.Point(728, 169);
+            this.procmemdump.Location = new System.Drawing.Point(728, 121);
             this.procmemdump.Name = "procmemdump";
             this.procmemdump.Size = new System.Drawing.Size(123, 21);
             this.procmemdump.TabIndex = 86;
@@ -1257,7 +1227,7 @@
             this.procexedump.BackColor = System.Drawing.Color.Transparent;
             this.procexedump.Enabled = false;
             this.procexedump.ForeColor = System.Drawing.Color.Silver;
-            this.procexedump.Location = new System.Drawing.Point(728, 145);
+            this.procexedump.Location = new System.Drawing.Point(728, 94);
             this.procexedump.Name = "procexedump";
             this.procexedump.Size = new System.Drawing.Size(115, 21);
             this.procexedump.TabIndex = 85;
@@ -1271,7 +1241,7 @@
             this.mutantscan.BackColor = System.Drawing.Color.Transparent;
             this.mutantscan.Enabled = false;
             this.mutantscan.ForeColor = System.Drawing.Color.Silver;
-            this.mutantscan.Location = new System.Drawing.Point(728, 62);
+            this.mutantscan.Location = new System.Drawing.Point(598, 380);
             this.mutantscan.Name = "mutantscan";
             this.mutantscan.Size = new System.Drawing.Size(103, 21);
             this.mutantscan.TabIndex = 84;
@@ -1285,7 +1255,7 @@
             this.modules.BackColor = System.Drawing.Color.Transparent;
             this.modules.Enabled = false;
             this.modules.ForeColor = System.Drawing.Color.Silver;
-            this.modules.Location = new System.Drawing.Point(728, 32);
+            this.modules.Location = new System.Drawing.Point(598, 356);
             this.modules.Name = "modules";
             this.modules.Size = new System.Drawing.Size(83, 21);
             this.modules.TabIndex = 83;
@@ -1299,7 +1269,7 @@
             this.mftparser.BackColor = System.Drawing.Color.Transparent;
             this.mftparser.Enabled = false;
             this.mftparser.ForeColor = System.Drawing.Color.Silver;
-            this.mftparser.Location = new System.Drawing.Point(597, 355);
+            this.mftparser.Location = new System.Drawing.Point(598, 306);
             this.mftparser.Name = "mftparser";
             this.mftparser.Size = new System.Drawing.Size(90, 21);
             this.mftparser.TabIndex = 82;
@@ -1336,7 +1306,6 @@
             this.Controls.Add(this.kdbgscan);
             this.Controls.Add(this.idt);
             this.Controls.Add(this.hivescan);
-            this.Controls.Add(this.hibinfo);
             this.Controls.Add(this.hivelist);
             this.Controls.Add(this.getservicesids);
             this.Controls.Add(this.gdt);
@@ -1352,7 +1321,6 @@
             this.Controls.Add(this.bioskbd);
             this.Controls.Add(this.callbacks);
             this.Controls.Add(this.consoles);
-            this.Controls.Add(this.crashinfo);
             this.Controls.Add(this.deskscan);
             this.Controls.Add(this.devicetree);
             this.Controls.Add(this.atomscan);
@@ -1470,7 +1438,6 @@
         private System.Windows.Forms.CheckBox atomscan;
         private System.Windows.Forms.CheckBox devicetree;
         private System.Windows.Forms.CheckBox deskscan;
-        private System.Windows.Forms.CheckBox crashinfo;
         private System.Windows.Forms.CheckBox consoles;
         private System.Windows.Forms.CheckBox callbacks;
         private System.Windows.Forms.CheckBox bioskbd;
@@ -1486,7 +1453,6 @@
         private System.Windows.Forms.CheckBox gdt;
         private System.Windows.Forms.CheckBox getservicesids;
         private System.Windows.Forms.CheckBox hivelist;
-        private System.Windows.Forms.CheckBox hibinfo;
         private System.Windows.Forms.CheckBox hivescan;
         private System.Windows.Forms.CheckBox idt;
         private System.Windows.Forms.CheckBox kdbgscan;
