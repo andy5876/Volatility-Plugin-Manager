@@ -1303,7 +1303,7 @@
             this.mftparser.Name = "mftparser";
             this.mftparser.Size = new System.Drawing.Size(90, 21);
             this.mftparser.TabIndex = 82;
-            this.mftparser.Tag = "mfparser";
+            this.mftparser.Tag = "mftparser";
             this.mftparser.Text = "mftparser";
             this.mftparser.UseVisualStyleBackColor = false;
             // 

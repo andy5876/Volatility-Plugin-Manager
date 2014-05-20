@@ -342,6 +342,7 @@
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>NewComponent1</td><td>{75391FFC-B67E-4CC7-9DC3-04F4D9C065EC}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>NewComponent2</td><td>{EFCD17E1-E811-4454-A626-90679BABA753}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>volatility.exe</td><td>{CD71415B-B9A0-464A-B3CD-A20FA82E4FE4}</td><td>INSTALLDIR</td><td>2</td><td/><td>volatility.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>volatility_GUI.Primary_output</td><td>{E87E3FA7-BABC-40BC-A9DF-155C1807A9D7}</td><td>INSTALLDIR</td><td>2</td><td/><td>volatility_gui.primary_outpu</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
@@ -1054,6 +1055,7 @@
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>INSTALLDIR</td><td>NewComponent1</td></row>
+		<row><td>INSTALLDIR</td><td>NewComponent2</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1072,6 +1074,7 @@
 		<row><td>ISUnSelfRegisterFiles</td><td>3073</td><td>ISSELFREG.DLL</td><td>ISUnSelfRegisterFiles</td><td/><td/></row>
 		<row><td>LaunchProgramFileFromSetupCompleteSuccess</td><td>1</td><td>NewBinary19</td><td>LaunchProgram</td><td/><td/></row>
 		<row><td>SetARPINSTALLLOCATION</td><td>51</td><td>ARPINSTALLLOCATION</td><td>[INSTALLDIR]</td><td/><td/></row>
+		<row><td>SetARPReadme</td><td>51</td><td>ARPREADME</td><td>D:\Documents\Visual Studio 2013\Projects\Volatility Plugin Manager 1.1\README.md</td><td/><td/></row>
 		<row><td>SetAllUsersProfileNT</td><td>51</td><td>ALLUSERSPROFILE</td><td>[%SystemRoot]\Profiles\All Users</td><td/><td/></row>
 		<row><td>ShowMsiLog</td><td>226</td><td>SystemFolder</td><td>[SystemFolder]notepad.exe "[MsiLogFileLocation]"</td><td/><td>Shows Property-driven MSI Log</td></row>
 		<row><td>setAllUsersProfile2K</td><td>51</td><td>ALLUSERSPROFILE</td><td>[%ALLUSERSPROFILE]</td><td/><td/></row>
@@ -1868,6 +1871,7 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>NewComponent1</td></row>
+		<row><td>AlwaysInstall</td><td>NewComponent2</td></row>
 		<row><td>AlwaysInstall</td><td>volatility.exe</td></row>
 		<row><td>AlwaysInstall</td><td>volatility_GUI.Primary_output</td></row>
 	</table>
@@ -2032,6 +2036,7 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>NewComponent1</td><td/><td/><td>_2ECF3593_87F7_46D4_9454_A2F05293AA56_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>NewComponent2</td><td/><td/><td>_F74FE0AC_A57C_4070_B2F9_3B682EDBA0F3_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>volatility.exe</td><td/><td/><td>_79749C0E_45F0_487A_B5CE_DC1B111F12B1_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>volatility_GUI.Primary_output</td><td/><td/><td>_188C7671_4D73_478C_B008_D1FC5BD91437_FILTER</td><td/><td/><td/><td/></row>
 	</table>
@@ -3757,10 +3762,13 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1386368599</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.LethalForensics.com</td><td>0</td><td/><td>-1969046924</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>https://github.com/andy5876/Volatility-Plugin-Manager</td><td>0</td><td/><td>-1700649581</td></row>
 		<row><td>ID_STRING2</td><td>1033</td><td>Lethal Forensics</td><td>0</td><td/><td>-1969046924</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>Volatility Plugin Manager 1.0</td><td>0</td><td/><td>1520601089</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>Volatility Plugin Manager 1.1</td><td>0</td><td/><td>-1969056940</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td/><td>0</td><td/><td>-1700653805</td></row>
+		<row><td>ID_STRING6</td><td>1033</td><td>andrewnind@gmail.com</td><td>0</td><td/><td>-1700639341</td></row>
+		<row><td>ID_STRING7</td><td>1033</td><td>https://github.com/andy5876/Volatility-Plugin-Manager</td><td>0</td><td/><td>-1700629101</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1386368599</td></row>
 	</table>
 
@@ -3868,8 +3876,8 @@
 		<col def="V0">Data</col>
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
-		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
-		<row><td>UNINST_Uninstall_S_1B531749D93B4813AF13CAC452D7C9F1.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2013LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
+		<row><td>ARPPRODUCTICON.exe</td><td/><td>D:\Pictures\VPM Icon large.ico</td><td>0</td></row>
+		<row><td>UNINST_Uninstall_V_BE6CE54C7F3B425BA99CEF39770E99D5.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2013LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 		<row><td>_23D604278C7F4C3CB2BE472C602DE8BC.exe</td><td/><td>d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Release\Volatility Plugin Manager beta.exe</td><td>0</td></row>
 		<row><td>_5CEAA6753E054138918938F69C2F1CBE.exe</td><td/><td>d:\documents\visual studio 2013\Projects\volatility GUI\volatility GUI\bin\Release\Volatility Plugin Manager beta.exe</td><td>0</td></row>
 		<row><td>_Built1_44AFA2C780E945D395AD0ECCD3BAC1A5.exe</td><td/><td>D:\Pictures\VPM Icon large.ico</td><td>0</td></row>
@@ -3968,6 +3976,7 @@
 		<row><td>SelfRegModules</td><td/><td>5600</td><td>SelfRegModules</td><td/></row>
 		<row><td>SelfUnregModules</td><td/><td>2200</td><td>SelfUnregModules</td><td/></row>
 		<row><td>SetARPINSTALLLOCATION</td><td/><td>1100</td><td>SetARPINSTALLLOCATION</td><td/></row>
+		<row><td>SetARPReadme</td><td/><td>1001</td><td/><td/></row>
 		<row><td>SetAllUsersProfileNT</td><td>VersionNT = 400</td><td>970</td><td/><td/></row>
 		<row><td>SetODBCFolders</td><td/><td>1200</td><td>SetODBCFolders</td><td/></row>
 		<row><td>StartServices</td><td>VersionNT</td><td>5900</td><td>StartServices</td><td/></row>
@@ -4012,7 +4021,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{5D2A2D23-F067-41BE-9B9F-70BD8FA687B7}</td></row>
 		<row><td>ISUSSignature</td><td>{6CD1434D-5FAA-4C17-9775-34AF9D3ADCD0}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewObjects,viewISToday,viewProject,viewRealSetupDesign,viewSystemSearch,viewUI,viewBillboards,viewTextMessages</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewObjects,viewISToday,viewProject,viewRealSetupDesign,viewSystemSearch,viewUI,viewBillboards,viewTextMessages,viewAppFiles,viewFeatureFiles,viewInstallScriptStd,viewCustomActions,viewSupportFiles,viewRelease,viewDesignPatches</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4053,6 +4062,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PatchWelcome</td><td>Installed And PATCH And Not IS_MAJOR_UPGRADE</td><td>1205</td><td>Patch Panel</td><td/></row>
 		<row><td>RMCCPSearch</td><td>Not CCP_SUCCESS And CCP_TEST</td><td>600</td><td>RMCCPSearch</td><td/></row>
 		<row><td>ResolveSource</td><td>Not Installed</td><td>990</td><td>ResolveSource</td><td/></row>
+		<row><td>SetARPReadme</td><td/><td>1001</td><td/><td/></row>
 		<row><td>SetAllUsersProfileNT</td><td>VersionNT = 400</td><td>970</td><td/><td/></row>
 		<row><td>SetupCompleteError</td><td/><td>-3</td><td>SetupCompleteError</td><td/></row>
 		<row><td>SetupCompleteSuccess</td><td/><td>-1</td><td>SetupCompleteSuccess</td><td/></row>
@@ -4321,8 +4331,11 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L0">Value</col>
 		<col def="S255">ISComments</col>
 		<row><td>ALLUSERS</td><td>1</td><td/></row>
+		<row><td>ARPCONTACT</td><td>##ID_STRING6##</td><td/></row>
+		<row><td>ARPHELPLINK</td><td>##ID_STRING7##</td><td/></row>
 		<row><td>ARPINSTALLLOCATION</td><td/><td/></row>
 		<row><td>ARPPRODUCTICON</td><td>ARPPRODUCTICON.exe</td><td/></row>
+		<row><td>ARPREADME</td><td>D:\Documents\Visual Studio 2013\Projects\Volatility Plugin Manager 1.1\README.md</td><td/></row>
 		<row><td>ARPSIZE</td><td/><td/></row>
 		<row><td>ARPURLINFOABOUT</td><td>##ID_STRING1##</td><td/></row>
 		<row><td>AgreeToLicense</td><td>No</td><td/></row>
@@ -4360,6 +4373,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>IS_SQLSERVER_SERVER</td><td/><td/></row>
 		<row><td>IS_SQLSERVER_USERNAME</td><td>sa</td><td/></row>
 		<row><td>InstallChoice</td><td>AR</td><td/></row>
+		<row><td>LAUNCHPROGRAM</td><td>1</td><td/></row>
 		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{27D3D0BF-6A9F-4489-8D82-0CF3717673E2}</td><td/></row>
 		<row><td>LAUNCHPROGRAMFILEKEY</td><td>volatility_gui.primary_outpu</td><td/></row>
 		<row><td>LAUNCHREADME</td><td>1</td><td/></row>
@@ -4404,7 +4418,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>RestartManagerOption</td><td>CloseRestart</td><td/></row>
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
-		<row><td>SHOWLAUNCHPROGRAM</td><td>0</td><td/></row>
+		<row><td>SHOWLAUNCHPROGRAM</td><td>-1</td><td/></row>
 		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION45FULL</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
@@ -4472,7 +4486,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>FileKey1</td><td>volatility.exe</td><td/><td>lethal_1_lethal_forensics</td><td>2</td></row>
 		<row><td>FileKey2</td><td>volatility.exe</td><td/><td>setup2</td><td>2</td></row>
 		<row><td>FileKey3</td><td>volatility_GUI.Primary_output</td><td/><td>volati_1.1_volatility_plugin_manager_1.1</td><td>2</td></row>
-		<row><td>UNINST_Uninstall_Setup2</td><td>NewComponent1</td><td/><td>setup2</td><td>2</td></row>
+		<row><td>UNINST_Uninstall_Volatility_Plugin_Manager_1.1</td><td>NewComponent2</td><td/><td>volati_1.1_volatility_plugin_manager_1.1</td><td>2</td></row>
 		<row><td>_Built</td><td>volatility_GUI.Primary_output</td><td/><td>volati_1.1_volatility_plugin_manager_1.1</td><td>2</td></row>
 		<row><td>volatility.exe</td><td>volatility.exe</td><td/><td>setup2</td><td>2</td></row>
 	</table>
@@ -4560,7 +4574,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>UNINST_Uninstall_Setup2</td><td>setup2</td><td>UNINST|Uninstall Setup2</td><td>NewComponent1</td><td>[SystemFolder]msiexec.exe</td><td>/x {517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/><td/><td>UNINST_Uninstall_S_1B531749D93B4813AF13CAC452D7C9F1.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>UNINST_Uninstall_Volatility_Plugin_Manager_1.1</td><td>volati_1.1_volatility_plugin_manager_1.1</td><td>UNINST|Uninstall Volatility Plugin Manager 1.1</td><td>NewComponent2</td><td>[SystemFolder]msiexec.exe</td><td>/x {517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/><td/><td>UNINST_Uninstall_V_BE6CE54C7F3B425BA99CEF39770E99D5.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>_Built</td><td>volati_1.1_volatility_plugin_manager_1.1</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_7DA16264215A4DD487A5BC8A49638197.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_F8B515F938094EE7A4D8128ED6B26D94.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>volatility.exe</td><td>setup2</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>volatility.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>volatility.exe_1792559B9E584BF3AC8BE73F375828F8.exe</td><td>1</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
