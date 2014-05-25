@@ -7,6 +7,19 @@ Allows the user to specify an ouput directory for the plugins to place their out
 
 Any questions, suggestions or comments please feel free to contact
 
+PROGRESS BAR
+------------
+
+
+The Progress bar at the moment, is causing me some difficulty, it only updates once each plugin is completed. This means that if you chose a plugin that happens to take a while and this runs first, the progress bar will sit at 0% until it that first plugin is complete. 
+
+I appreciate that this doesn't give you the warm and fuzzy feeling that the tool is working, and this is an issue I would like to fix. If there are any C#'ers out there that would like to suggest a fix to this I would be massively thankful.
+
+Until such time as I fix it, I would encourage you to have a little faith that it is working despite it sitting at 0%
+If you really want to make sure as it is taking a long time. Look in your output directory and you should see a file has been created. If not, then in task manager, you should see two instances of Volatility.exe in the background processes. One should be working , the onther should not. If you see this, then rest assured Volatility is churning away at your plugin.
+
+
+
 Andy Nind
 andrewnind@gmail.com
 
