@@ -52,7 +52,7 @@
 	<summary>
 		<codepage>1252</codepage>
 		<title>Installation Database</title>
-		<subject>Volatility Plugin Manager 1.1</subject>
+		<subject>##ID_STRING9##</subject>
 		<author>##ID_STRING2##</author>
 		<keywords>Installer,MSI,Database</keywords>
 		<comments>Contact:  Your local administrator</comments>
@@ -3473,7 +3473,8 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>volatility.exe</td><td>0</td><td/><td>1520590849</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>Volatility Plugin Manager 2.0</td><td>0</td><td/><td>1386409687</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>Volatility Plugin Manager 1.0</td><td>0</td><td/><td>1520570369</td></row>
-		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>Volatility Plugin Manager 1.1</td><td>0</td><td/><td>-1969061036</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>Volatility Plugin Manager 1.1.1</td><td>0</td><td/><td>-626902057</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME5</td><td>1033</td><td>Uninstall Volatility Plugin Manager 1.1.1</td><td>0</td><td/><td>-626891817</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>1386368599</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1386368599</td></row>
@@ -3769,6 +3770,8 @@
 		<row><td>ID_STRING5</td><td>1033</td><td/><td>0</td><td/><td>-1700653805</td></row>
 		<row><td>ID_STRING6</td><td>1033</td><td>andrewnind@gmail.com</td><td>0</td><td/><td>-1700639341</td></row>
 		<row><td>ID_STRING7</td><td>1033</td><td>https://github.com/andy5876/Volatility-Plugin-Manager</td><td>0</td><td/><td>-1700629101</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td> https://github.com/andy5876/Volatility-Plugin-Manager/releases</td><td>0</td><td/><td>-626875145</td></row>
+		<row><td>ID_STRING9</td><td>1033</td><td>Volatility Plugin Manager 1.1.0</td><td>0</td><td/><td>-626897577</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1386368599</td></row>
 	</table>
 
@@ -3964,7 +3967,7 @@
 		<row><td>RegisterUser</td><td/><td>6000</td><td>RegisterUser</td><td/></row>
 		<row><td>RemoveDuplicateFiles</td><td/><td>3400</td><td>RemoveDuplicateFiles</td><td/></row>
 		<row><td>RemoveEnvironmentStrings</td><td/><td>3300</td><td>RemoveEnvironmentStrings</td><td/></row>
-		<row><td>RemoveExistingProducts</td><td/><td>1410</td><td>RemoveExistingProducts</td><td/></row>
+		<row><td>RemoveExistingProducts</td><td/><td>1500</td><td>RemoveExistingProducts</td><td/></row>
 		<row><td>RemoveFiles</td><td/><td>3500</td><td>RemoveFiles</td><td/></row>
 		<row><td>RemoveFolders</td><td/><td>3600</td><td>RemoveFolders</td><td/></row>
 		<row><td>RemoveIniValues</td><td/><td>3100</td><td>RemoveIniValues</td><td/></row>
@@ -4021,7 +4024,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{5D2A2D23-F067-41BE-9B9F-70BD8FA687B7}</td></row>
 		<row><td>ISUSSignature</td><td>{6CD1434D-5FAA-4C17-9775-34AF9D3ADCD0}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewObjects,viewISToday,viewProject,viewRealSetupDesign,viewSystemSearch,viewUI,viewBillboards,viewTextMessages,viewAppFiles,viewFeatureFiles,viewInstallScriptStd,viewCustomActions,viewSupportFiles,viewRelease,viewDesignPatches</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewObjects,viewISToday,viewProject,viewRealSetupDesign,viewSystemSearch,viewUI,viewBillboards,viewTextMessages,viewAppFiles,viewFeatureFiles,viewInstallScriptStd,viewCustomActions,viewSupportFiles,viewRelease,viewDesignPatches,viewUpdateService,viewVRoots,viewUpgradePaths,viewSetupDesign,viewSetupTypes</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4338,9 +4341,11 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ARPREADME</td><td>D:\Documents\Visual Studio 2013\Projects\Volatility Plugin Manager 1.1\README.md</td><td/></row>
 		<row><td>ARPSIZE</td><td/><td/></row>
 		<row><td>ARPURLINFOABOUT</td><td>##ID_STRING1##</td><td/></row>
+		<row><td>ARPURLUPDATEINFO</td><td>##ID_STRING8##</td><td/></row>
 		<row><td>AgreeToLicense</td><td>No</td><td/></row>
 		<row><td>ApplicationUsers</td><td>AllUsers</td><td/></row>
-		<row><td>DWUSINTERVAL</td><td>30</td><td/></row>
+		<row><td>DWUSHOST</td><td>https://github.com/andy5876/Volatility-Plugin-Manager/releases/</td><td/></row>
+		<row><td>DWUSINTERVAL</td><td>1</td><td/></row>
 		<row><td>DWUSLINK</td><td>CE9CE7E8C9CCE0EFB9ACA0E8B9CB978FE99BB08FCEFB77B8CEECD7BFEEBCB7A8B96BD0EFBEAC</td><td/></row>
 		<row><td>DefaultUIFont</td><td>ExpressDefault</td><td/></row>
 		<row><td>DialogCaption</td><td>InstallShield for Windows Installer</td><td/></row>
@@ -4353,7 +4358,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ErrorDialog</td><td>SetupError</td><td/></row>
 		<row><td>INSTALLLEVEL</td><td>200</td><td/></row>
 		<row><td>ISCHECKFORPRODUCTUPDATES</td><td>1</td><td/></row>
-		<row><td>ISENABLEDWUSFINISHDIALOG</td><td/><td/></row>
 		<row><td>ISSHOWMSILOG</td><td/><td/></row>
 		<row><td>ISVROOT_PORT_NO</td><td>0</td><td/></row>
 		<row><td>IS_COMPLUS_PROGRESSTEXT_COST</td><td>##IDS_COMPLUS_PROGRESSTEXT_COST##</td><td/></row>
@@ -4373,10 +4377,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>IS_SQLSERVER_SERVER</td><td/><td/></row>
 		<row><td>IS_SQLSERVER_USERNAME</td><td>sa</td><td/></row>
 		<row><td>InstallChoice</td><td>AR</td><td/></row>
-		<row><td>LAUNCHPROGRAM</td><td>1</td><td/></row>
 		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{27D3D0BF-6A9F-4489-8D82-0CF3717673E2}</td><td/></row>
 		<row><td>LAUNCHPROGRAMFILEKEY</td><td>volatility_gui.primary_outpu</td><td/></row>
-		<row><td>LAUNCHREADME</td><td>1</td><td/></row>
 		<row><td>Manufacturer</td><td>##COMPANY_NAME##</td><td/></row>
 		<row><td>PIDKEY</td><td/><td/></row>
 		<row><td>PIDTemplate</td><td>12345&lt;###-%%%%%%%&gt;@@@@@</td><td/></row>
@@ -4405,8 +4407,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]volatility GUI.Primary output</td><td/></row>
 		<row><td>ProductCode</td><td>{517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/></row>
-		<row><td>ProductName</td><td>Volatility Plugin Manager 1.1</td><td/></row>
-		<row><td>ProductVersion</td><td>1.1.0000</td><td/></row>
+		<row><td>ProductName</td><td>Volatility Plugin Manager 1.1.1</td><td/></row>
+		<row><td>ProductVersion</td><td>1.1.2000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4418,7 +4420,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>RestartManagerOption</td><td>CloseRestart</td><td/></row>
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
-		<row><td>SHOWLAUNCHPROGRAM</td><td>-1</td><td/></row>
+		<row><td>SHOWLAUNCHPROGRAM</td><td>0</td><td/></row>
+		<row><td>SHOWLAUNCHREADME</td><td>0</td><td/></row>
 		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION45FULL</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
@@ -4574,7 +4577,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>UNINST_Uninstall_Volatility_Plugin_Manager_1.1</td><td>volati_1.1_volatility_plugin_manager_1.1</td><td>UNINST|Uninstall Volatility Plugin Manager 1.1</td><td>NewComponent2</td><td>[SystemFolder]msiexec.exe</td><td>/x {517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/><td/><td>UNINST_Uninstall_V_BE6CE54C7F3B425BA99CEF39770E99D5.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>UNINST_Uninstall_Volatility_Plugin_Manager_1.1</td><td>volati_1.1_volatility_plugin_manager_1.1</td><td>##IDS_SHORTCUT_DISPLAY_NAME5##</td><td>NewComponent2</td><td>[SystemFolder]msiexec.exe</td><td>/x {517BE9AA-1D39-4D0B-A3E5-EF505DB55A84}</td><td/><td/><td>UNINST_Uninstall_V_BE6CE54C7F3B425BA99CEF39770E99D5.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>_Built</td><td>volati_1.1_volatility_plugin_manager_1.1</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_7DA16264215A4DD487A5BC8A49638197.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>volatility_GUI.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_F8B515F938094EE7A4D8128ED6B26D94.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>volatility.exe</td><td>setup2</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>volatility.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>volatility.exe_1792559B9E584BF3AC8BE73F375828F8.exe</td><td>1</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>

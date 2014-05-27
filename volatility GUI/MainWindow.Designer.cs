@@ -117,6 +117,7 @@
             this.mutantscan = new System.Windows.Forms.CheckBox();
             this.modules = new System.Windows.Forms.CheckBox();
             this.mftparser = new System.Windows.Forms.CheckBox();
+            this.progresstext = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,7 +135,7 @@
             // 
             this.btnRun.BackColor = System.Drawing.Color.Transparent;
             this.btnRun.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRun.Location = new System.Drawing.Point(728, 439);
+            this.btnRun.Location = new System.Drawing.Point(763, 439);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(111, 42);
             this.btnRun.TabIndex = 19;
@@ -149,10 +150,10 @@
             this.imageinfo.ForeColor = System.Drawing.Color.Silver;
             this.imageinfo.Location = new System.Drawing.Point(365, 35);
             this.imageinfo.Name = "imageinfo";
-            this.imageinfo.Size = new System.Drawing.Size(95, 21);
+            this.imageinfo.Size = new System.Drawing.Size(83, 21);
             this.imageinfo.TabIndex = 5;
             this.imageinfo.Tag = "imageinfo";
-            this.imageinfo.Text = "Image Info";
+            this.imageinfo.Text = "imaginfo";
             this.imageinfo.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -679,7 +680,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancel.Location = new System.Drawing.Point(860, 439);
+            this.btnCancel.Location = new System.Drawing.Point(891, 439);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(111, 42);
             this.btnCancel.TabIndex = 48;
@@ -690,9 +691,9 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.SystemColors.ControlText;
-            this.progressBar1.Location = new System.Drawing.Point(12, 178);
+            this.progressBar1.Location = new System.Drawing.Point(356, 451);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(199, 11);
+            this.progressBar1.Size = new System.Drawing.Size(235, 30);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 49;
             // 
@@ -700,7 +701,7 @@
             // 
             this.progresslabel.AutoSize = true;
             this.progresslabel.BackColor = System.Drawing.Color.Transparent;
-            this.progresslabel.Location = new System.Drawing.Point(217, 175);
+            this.progresslabel.Location = new System.Drawing.Point(597, 455);
             this.progresslabel.Name = "progresslabel";
             this.progresslabel.Size = new System.Drawing.Size(0, 17);
             this.progresslabel.TabIndex = 50;
@@ -1143,7 +1144,7 @@
             this.thrdscan.BackColor = System.Drawing.Color.Transparent;
             this.thrdscan.Enabled = false;
             this.thrdscan.ForeColor = System.Drawing.Color.Silver;
-            this.thrdscan.Location = new System.Drawing.Point(860, 89);
+            this.thrdscan.Location = new System.Drawing.Point(860, 94);
             this.thrdscan.Name = "thrdscan";
             this.thrdscan.Size = new System.Drawing.Size(85, 21);
             this.thrdscan.TabIndex = 91;
@@ -1277,6 +1278,19 @@
             this.mftparser.Text = "mftparser";
             this.mftparser.UseVisualStyleBackColor = false;
             // 
+            // progresstext
+            // 
+            this.progresstext.BackColor = System.Drawing.Color.Black;
+            this.progresstext.ForeColor = System.Drawing.SystemColors.Window;
+            this.progresstext.Location = new System.Drawing.Point(9, 121);
+            this.progresstext.Multiline = true;
+            this.progresstext.Name = "progresstext";
+            this.progresstext.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.progresstext.Size = new System.Drawing.Size(343, 95);
+            this.progresstext.TabIndex = 96;
+            this.progresstext.Text = "Progress...";
+            this.progresstext.TextChanged += new System.EventHandler(this.progresstext_TextChanged);
+            // 
             // MainWindow
             // 
             this.AllowDrop = true;
@@ -1285,6 +1299,7 @@
             this.BackgroundImage = global::volatility_GUI.Properties.Resources.VPMbackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1015, 515);
+            this.Controls.Add(this.progresstext);
             this.Controls.Add(this.userhandles);
             this.Controls.Add(this.unloadedmodules);
             this.Controls.Add(this.timers);
@@ -1474,6 +1489,7 @@
         private System.Windows.Forms.CheckBox mutantscan;
         private System.Windows.Forms.CheckBox modules;
         private System.Windows.Forms.CheckBox mftparser;
+        private System.Windows.Forms.TextBox progresstext;
     }
 }
 

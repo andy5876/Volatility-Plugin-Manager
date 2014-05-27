@@ -168,6 +168,8 @@ namespace volatility_GUI
             btnRun.Enabled = true;
             progresslabel.Text = "progress.... 100%";
             progressBar1.Value = 100;
+            progresstext.Text += "COMPLETE!";
+            
         }
 
         private void RunPlugin(object Tag, string imagefile, string output)
@@ -176,6 +178,9 @@ namespace volatility_GUI
             string[] tags = Tag.ToString().Split(',');
             string PluginName = tags[0];
             string profile = profiletextbox.Text;
+            
+            
+
             if (tags.Contains("DIR"))
             {
                 if (tags.Contains("PID") && pidbox.Text !="")
@@ -204,6 +209,23 @@ namespace volatility_GUI
             {
                 commandlineargs += " -p " + pidbox.Text;
             }
+
+            if (tags.Contains("imageinfo"))
+            {
+                commandlineargs = "-f" + " " + imagefile + " " + PluginName + " " + "--output-file" + " " + output + @"\" + PluginName + @".txt";
+            }
+
+            if (progresstext.Text == "")
+            {
+                progresstext.Text += "running" + " " + "the" + " " + PluginName + " plugin" + "...\r\n" + "Please be patient...\r\n";
+                
+            }
+            else
+            {
+                progresstext.Text += "running" + " the" + " " + PluginName +  " plugin" + "...\r\n";
+                progresstext.ScrollToCaret();
+            }
+             
             Process process = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -213,9 +235,6 @@ namespace volatility_GUI
             startInfo.CreateNoWindow = true;
             process.StartInfo = startInfo;
             process.Start();
-            
-           
-            
             process.WaitForExit();
             process.Close();
 
@@ -251,19 +270,24 @@ namespace volatility_GUI
                     writer.WriteLine("   ");
                     writer.WriteLine("   ");
                     while (!reader.EndOfStream)
-                        writer.WriteLine(reader.ReadLine());
+                    writer.WriteLine(reader.ReadLine());
                 }
                 File.Copy(tempfile, output + @"\" + PluginName + @".txt", true);
                 File.Delete(tempfile);
+                progresstext.Text += PluginName + " " + "complete" + "...\r\n";
+                progresstext.ScrollToCaret();
+                
             }
+
 
             
             
         }
-
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
+            progresstext.Text = "";
             backgroundWorker1.RunWorkerAsync(); ///sets the background worker running once all the error checks have run
         }
 
@@ -324,6 +348,12 @@ namespace volatility_GUI
         private void memdump_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void progresstext_TextChanged(object sender, EventArgs e)
+        {
+            progresstext.SelectionStart = progresstext.Text.Length;
+            progresstext.ScrollToCaret();
         }
 
     }
